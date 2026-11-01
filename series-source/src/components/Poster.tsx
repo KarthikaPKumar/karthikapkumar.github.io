@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import type { Palette, Project } from '../data/portfolio';
+import { profile, type Palette, type Project } from '../data/portfolio';
 
 /**
  * Generated "key art" for thumbnails · layered gradients, light falloff and a motif.
@@ -100,7 +100,7 @@ export function SeriesMark({ className = '' }: { className?: string }) {
       <svg viewBox="0 0 24 32" className="h-[1.1em] w-auto" aria-hidden>
         <path d="M6 4v24M20 4L6 17l14 11" fill="none" stroke="#7f2944" strokeWidth="4" strokeLinecap="round" />
       </svg>
-      <span className="font-sans text-[0.62em] font-bold tracking-[0.36em] text-mist">KATHY</span>
+      <span className="font-sans text-[12px] max-w-[150px] sm:max-w-none text-left leading-snug font-bold tracking-[0.08em] text-mist">{profile.fullName}</span>
     </span>
   );
 }

@@ -21,24 +21,24 @@ const violet: Palette = {"from": "#271522", "via": "#49334f", "to": "#140d13", "
 const jade: Palette = {"from": "#24170f", "via": "#66503b", "to": "#160e0b", "accent": "#d2ad83"};
 export const profile = {
   "fullName": "Karthika Pillai Kumar",
-  "displayName": "Kathy",
+  "displayName": "Karthika Pillai Kumar",
   "firstName": "KATHY",
   "seriesTag": "DATA · MODELS · IMPACT",
   "originalLabel": "KARTHIKA PILLAI KUMAR",
-  "role": "Data Science · ML Engineering · Analytics Engineering",
+  "role": "Data Scientist & Engineer",
   "tagline": [
     "Data Science",
     "ML Engineering",
     "Analytics Engineering"
   ],
-  "intro": "A Master of Data Science student at Monash with software engineering experience at IBM. I build predictive models, reliable data pipelines and applications that turn complex data into something people can use.",
+  "intro": "Master of Data Science student at Monash (2025–2026). Previously IBM watsonx.data (Presto). I build predictive models, reliable data pipelines and applied AI tools.",
   "location": "Melbourne, Australia",
   "email": "karthikapillai@gmail.com",
   "links": {
     "linkedin": "https://www.linkedin.com/in/karthikapillaikumar/",
     "github": "https://github.com/KarthikaPKumar"
   },
-  "resumePdf": "",
+  "resumePdf": "/kathy/assets/karthika-pillai-kumar-resume.pdf",
   "portrait": {
     "src": "/kathy/revamp/assets/kathy-professional.png",
     "srcSet": "",
@@ -944,14 +944,14 @@ export const viewerProfiles: {
     name: 'Entire Portfolio',
     blurb: 'Explore the complete portfolio',
     color: '#673247',
-    order: ['originals', 'story', 'skills', 'about', 'journey'],
+    order: ['story', 'skills', 'originals', 'about', 'journey'],
   },
   {
     id: 'recruiter',
     name: 'Recruiter',
     blurb: 'Experience, results & skills',
     color: '#7a6142',
-    order: ['story', 'originals', 'skills'],
+    order: ['story', 'skills', 'originals'],
   },
   {
     id: 'developer',
@@ -970,5 +970,5 @@ export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: s
   picks: { nav: 'Key Strengths', card: 'Key Strengths', meta: '10 selected strengths', palette: jade },
   skills: { nav: 'Skills', card: 'My Skills', meta: `${skillCategories.length} Categories`, palette: ocean },
   moments: { nav: 'Highlights', card: 'My Highlights', meta: `${achievements.length} Career & Project Highlights`, palette: crimson },
-  story: { nav: 'Resume', card: 'Career Summary', meta: 'Career summary • View & print', palette: violet },
+  story: { nav: 'Experience', card: 'Career Summary', meta: 'Career summary • View & print', palette: violet },
 };

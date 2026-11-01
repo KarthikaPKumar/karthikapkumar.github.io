@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from 'framer-motion';
-import { profile, projects, type ProfileId } from '../data/portfolio';
+import { profile, type ProfileId } from '../data/portfolio';
 import { useFinePointer } from '../hooks/useMedia';
 import { useSmoothScroll } from '../hooks/smoothScroll';
 import { EASE, Magnetic, Particles } from './fx';
@@ -34,7 +34,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
   const imgShiftX = useTransform(px, [-1, 1], [-10, 10]);
   const glowX = useTransform(px, [-1, 1], ['-6%', '6%']);
 
-  const meta = ['Melbourne', 'Monash · M.Data Science', `${projects.length} Projects`, 'IBM experience'];
+  const meta = ['Python', 'SQL', 'scikit-learn', 'dbt · DuckDB'];
 
   return (
     <section
@@ -104,11 +104,11 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
         <motion.div variants={item} className="mb-3 text-lg">
           <SeriesMark />
         </motion.div>
-        <motion.h1 variants={item} className="font-display leading-[0.82] tracking-[0.02em] text-bone" style={{ fontSize: 'clamp(4rem, 12vw, 11rem)' }}>
-          <span className="shimmer-text">{profile.firstName}</span>
+        <motion.h1 variants={item} className="font-display leading-[0.82] tracking-[0.02em] text-bone" style={{ fontSize: 'clamp(3.2rem, 6vw, 6.2rem)' }}>
+          <span className="shimmer-text">{profile.fullName}</span>
         </motion.h1>
-        <motion.p variants={item} className="mt-1 font-sans text-sm font-bold tracking-[0.62em] text-crimson-2 sm:text-base">
-          {profile.seriesTag}
+        <motion.p variants={item} className="mt-1 font-sans text-sm font-bold tracking-[0.08em] text-crimson-2 sm:text-base">
+          {profile.role}
         </motion.p>
 
         <motion.div variants={item} className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 text-[13px] font-medium text-mist">
@@ -122,14 +122,14 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
         </motion.div>
 
         <motion.p variants={item} className="mt-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-bone/90 sm:text-xs sm:tracking-[0.34em]">
-          {profile.tagline.join(' • ')}
+          Open to graduate and junior data roles in Melbourne
         </motion.p>
 
         <motion.p variants={item} className="mt-4 max-w-xl text-[15px] leading-relaxed text-bone/80 sm:text-base">
           {profile.intro}
         </motion.p>
 
-        <motion.div variants={item} className="mt-8 flex flex-wrap items-center gap-3">
+        <motion.div variants={item} className="mt-8 flex flex-wrap items-center gap-3"><a href={profile.resumePdf} download className="rounded-md bg-[#ead8b8] px-6 py-3 font-semibold text-ink">Download résumé PDF ↓</a>
           <Magnetic>
             <button
               type="button"
