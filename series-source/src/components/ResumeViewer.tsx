@@ -1,79 +1,13 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { achievements, education, experience, profile, projects, skillCategories } from '../data/portfolio';
-import { EASE, Magnetic, SectionHeading } from './fx';
+import { SectionHeading } from './fx';
 
 /** CAREER SUMMARY · a designed resume preview plus view / download actions. */
 export default function ResumeSection({ onView }: { onView: () => void }) {
-  return (
-    <>
-      <SectionHeading kicker="Experience & qualifications" title="Career Summary" />
-      <div className="gutter grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-14">
-        <motion.div
-          initial={{ opacity: 0, y: 60, rotateX: 10 }}
-          whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-          viewport={{ once: true, margin: '-10% 0px' }}
-          transition={{ duration: 1.1, ease: EASE }}
-          style={{ transformPerspective: 1600 }}
-        >
-          <CollapsibleSheet />
-        </motion.div>
-
-        <div className="lg:sticky lg:top-28 lg:self-start">
-          <p className="font-serif text-3xl italic leading-tight text-bone">Experience at a glance.</p>
-          <p className="mt-3 text-sm leading-relaxed text-mist">
-            Education, experience and projects, together in a printable career summary.
-          </p>
-          <div className="mt-6 flex flex-col gap-3">
-            <Magnetic className="w-full">
-              <button
-                type="button"
-                data-cursor="view"
-                onClick={onView}
-                className="flex min-h-12 w-full items-center justify-center gap-2 rounded-md bg-bone px-6 text-[15px] font-bold text-ink transition hover:bg-white"
-              >
-                ↗ View Resume
-              </button>
-            </Magnetic>
-            <Magnetic className="w-full">
-              <button type="button" onClick={onView} className="glass flex min-h-12 w-full items-center justify-center gap-2 rounded-md px-6 text-[15px] font-semibold text-bone">⤓ Open printable summary</button>
-            </Magnetic>
-          </div>
-          <dl className="mt-8 grid grid-cols-3 gap-px overflow-hidden rounded-xl bg-white/10 text-center">
-            {[
-              { v: '3', k: 'Disciplines' },
-              { v: String(projects.length), k: 'Projects' },
-              { v: String(experience.length), k: 'Roles' },
-            ].map((s) => (
-              <div key={s.k} className="bg-ink-2 px-2 py-4">
-                <dd className="font-display text-3xl leading-none text-bone">{s.v}</dd>
-                <dt className="mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-smoke">{s.k}</dt>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </div>
-    </>
-  );
-}
-
-/** On phones the sheet starts as a teaser so the page keeps its pace; desktop shows it in full. */
-function CollapsibleSheet() {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="relative">
-      <div className={`overflow-hidden transition-[max-height] duration-700 ease-[var(--ease-cine)] md:max-h-none ${open ? 'max-h-[4000px]' : 'max-h-[560px]'}`}>
-        <ResumeSheet />
-      </div>
-      {!open && (
-        <div className="absolute inset-x-0 bottom-0 flex h-48 items-end justify-center rounded-b-2xl bg-gradient-to-t from-ink via-ink/85 to-transparent pb-4 md:hidden">
-          <button type="button" onClick={() => setOpen(true)} className="glass min-h-11 rounded-full px-5 text-sm font-semibold text-bone">
-            Read the career summary ↓
-          </button>
-        </div>
-      )}
-    </div>
-  );
+ return <><SectionHeading kicker="Experience & education" title="Career at a glance" />
+ <div className="gutter grid items-start gap-8 lg:grid-cols-[minmax(0,1.6fr)_minmax(280px,1fr)] lg:gap-12">
+ <div className="space-y-5">{experience.map((x,i)=><article key={x.company} className="rounded-xl border border-white/10 p-6 sm:p-8" style={{background:i===0?'#25151e':'#182128'}}><p className="text-xs tracking-wide text-[#e5c69b]">{x.period}</p><h3 className="mt-3 text-xl font-semibold text-bone">{x.role}</h3><p className="mt-1 text-sm text-mist">{x.company} · {x.place}</p><p className="mt-5 max-w-2xl text-sm leading-7 text-bone/80">{x.points[0]}</p><details className="mt-4 text-sm"><summary className="cursor-pointer text-[#e5c69b]">Responsibilities</summary><ul className="mt-3 space-y-3 text-mist">{x.points.slice(1).map(t=><li key={t}>{t}</li>)}</ul></details></article>)}</div>
+ <aside className="rounded-xl border border-[#c8ae78]/25 bg-[#241e18] p-6 sm:p-8"><h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-[#e5c69b]">Education</h3><div className="mt-6 space-y-7">{education.map(e=><div key={e.school}><h4 className="font-semibold leading-6 text-bone">{e.degree}</h4><p className="mt-2 text-sm text-mist">{e.school}</p>{e.period&&<p className="mt-1 text-xs text-smoke">{e.period}</p>}</div>)}</div><button onClick={onView} className="mt-8 w-full rounded-md bg-[#ead8b8] px-4 py-3 text-sm font-semibold text-[#211b18]">View full career summary ↗</button></aside>
+ </div></>;
 }
 
 function H({ children }: { children: string }) {

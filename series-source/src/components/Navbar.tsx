@@ -108,7 +108,7 @@ export default function Navbar({ order, profileId, onSwitch }: { order: SectionI
                   transition={{ duration: 0.25, ease: EASE }}
                   className="absolute right-0 top-12 w-60 origin-top-right rounded-xl border border-white/10 bg-ink-2/95 p-2 shadow-2xl backdrop-blur-xl"
                 >
-                  <p className="px-3 pb-2 pt-1 text-[10px] font-semibold tracking-[0.24em] text-smoke">WHO&apos;S WATCHING?</p>
+                  <p className="px-3 pb-2 pt-1 text-[10px] font-semibold tracking-[0.24em] text-smoke">CHOOSE YOUR VIEW</p>
                   {viewerProfiles.map((p) => (
                     <button
                       key={p.id}

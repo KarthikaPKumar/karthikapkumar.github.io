@@ -941,32 +941,26 @@ export const viewerProfiles: {
 }[] = [
   {
     id: 'kathy',
-    name: 'Explore',
+    name: 'Entire Portfolio',
     blurb: 'Explore the complete portfolio',
-    color: '#7f2944',
-    order: ['about', 'journey', 'originals', 'picks', 'skills', 'moments', 'story'],
+    color: '#673247',
+    order: ['originals', 'story', 'skills', 'about', 'journey'],
   },
   {
     id: 'recruiter',
     name: 'Recruiter',
     blurb: 'Experience, results & skills',
-    color: '#685142',
-    order: ['story', 'moments', 'skills', 'originals', 'about', 'journey', 'picks'],
+    color: '#7a6142',
+    order: ['story', 'originals', 'skills'],
   },
   {
     id: 'developer',
-    name: 'Technical Peer',
-    blurb: 'Projects, architecture & code',
-    color: '#524b3d',
-    order: ['originals', 'skills', 'journey', 'moments', 'about', 'picks', 'story'],
+    name: 'Technical Peer / Connect',
+    blurb: 'Explore the code or start a conversation',
+    color: '#3d5261',
+    order: ['originals', 'skills', 'story', 'about', 'journey'],
   },
-  {
-    id: 'creative',
-    name: 'Let’s Connect',
-    blurb: 'Networking, ideas & collaboration',
-    color: '#624846',
-    order: ['journey', 'picks', 'originals', 'moments', 'about', 'skills', 'story'],
-  },
+
 ];
 
 export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: string; palette: Palette }> = {
