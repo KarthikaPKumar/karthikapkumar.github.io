@@ -3,10 +3,10 @@ import { SectionHeading } from './fx';
 
 /** CAREER SUMMARY · a designed resume preview plus view / download actions. */
 export default function ResumeSection({ onView }: { onView: () => void }) {
- return <><SectionHeading kicker="Experience & education" title="Career at a glance" />
+ return <><SectionHeading kicker="Professional background" title="Experience" />
  <div className="gutter grid items-start gap-8 lg:grid-cols-[minmax(0,1.6fr)_minmax(280px,1fr)] lg:gap-12">
  <div className="space-y-5">{experience.map((x,i)=><article key={x.company} className="rounded-xl border border-white/10 p-6 sm:p-8" style={{background:i===0?'#25151e':'#182128'}}><p className="text-xs tracking-wide text-[#e5c69b]">{x.period}</p><h3 className="mt-3 text-xl font-semibold text-bone">{x.role}</h3><p className="mt-1 text-sm text-mist">{x.company} · {x.place}</p><p className="mt-5 max-w-2xl text-sm leading-7 text-bone/80">{x.points[0]}</p><details className="mt-4 text-sm"><summary className="cursor-pointer text-[#e5c69b]">Responsibilities</summary><ul className="mt-3 space-y-3 text-mist">{x.points.slice(1).map(t=><li key={t}>{t}</li>)}</ul></details></article>)}</div>
- <aside className="rounded-xl border border-[#c8ae78]/25 bg-[#241e18] p-6 sm:p-8"><h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-[#e5c69b]">Education</h3><div className="mt-6 space-y-7">{education.map(e=><div key={e.school}><h4 className="font-semibold leading-6 text-bone">{e.degree}</h4><p className="mt-2 text-sm text-mist">{e.school}</p>{e.period&&<p className="mt-1 text-xs text-smoke">{e.period}</p>}</div>)}</div><button onClick={onView} className="mt-8 w-full rounded-md bg-[#ead8b8] px-4 py-3 text-sm font-semibold text-[#211b18]">View full career summary ↗</button></aside>
+ <aside className="rounded-xl border border-[#c8ae78]/25 bg-[#241e18] p-6 sm:p-8"><h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-[#e5c69b]">Education</h3><div className="mt-6 space-y-7">{education.map(e=><div key={e.school}><h4 className="font-semibold leading-6 text-bone">{e.degree}</h4><p className="mt-2 text-sm text-mist">{e.school}</p>{e.period&&<p className="mt-1 text-xs text-smoke">{e.period}</p>}</div>)}</div><button onClick={onView} className="mt-8 w-full rounded-md bg-[#ead8b8] px-4 py-3 text-sm font-semibold text-[#211b18]">View résumé ↗</button></aside>
  </div></>;
 }
 
@@ -49,14 +49,14 @@ export function ResumeSheet() {
                 <p className="text-xs text-smoke">{e.period}</p>
               </div>
               <p className="text-xs text-mist">
-                {e.degree} · <span className="text-bone/80">{e.score}</span>
+                {e.degree}{e.score && <> · <span className="text-bone/80">{e.score}</span></>}
               </p>
             </div>
           ))}
 
           <H>Work Experience</H>
           {experience.map((x) => (
-            <div key={x.company}>
+            <div key={x.company} className="mb-7">
               <div className="flex flex-wrap justify-between gap-x-3">
                 <p className="text-sm font-semibold text-bone">
                   {x.company} · {x.role}

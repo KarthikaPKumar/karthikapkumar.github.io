@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { seasons } from '../data/portfolio';
 import { EASE, SectionHeading } from './fx';
 import EpisodeCard from './EpisodeCard';
-import { RailButtons } from './Rail';
+
 
 export default function Seasons() {
   const [active, setActive] = useState(seasons.length - 2);
@@ -14,7 +14,7 @@ export default function Seasons() {
     <>
       <SectionHeading
         kicker={`${seasons.length} Career stages`}
-        title="Career Journey"
+        title="Journey"
         aside={<p className="max-w-xs text-sm text-mist">Explore the education, experience and projects that shape my work.</p>}
       />
 
@@ -59,12 +59,12 @@ export default function Seasons() {
           <p className="gutter max-w-3xl text-[15px] leading-relaxed text-bone/75">{season.synopsis}</p>
 
           <div className="group/rail relative">
-            <div ref={rail} className="rail gutter flex snap-x snap-mandatory gap-4 overflow-x-auto py-8 [perspective:1200px]">
+            <div ref={rail} className="gutter grid gap-5 py-8 md:grid-cols-3">
               {season.episodes.map((e, i) => (
                 <EpisodeCard key={e.code} episode={e} index={i} />
               ))}
             </div>
-            <RailButtons rail={rail} />
+
           </div>
         </motion.div>
       </AnimatePresence>

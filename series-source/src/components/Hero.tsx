@@ -3,8 +3,8 @@ import { motion, useMotionValue, useScroll, useSpring, useTransform } from 'fram
 import { profile, type ProfileId } from '../data/portfolio';
 import { useFinePointer } from '../hooks/useMedia';
 import { useSmoothScroll } from '../hooks/smoothScroll';
-import { EASE, Magnetic, Particles } from './fx';
-import { SeriesMark } from './Poster';
+import { EASE, Particles } from './fx';
+
 
 const container = { hidden: {}, show: { transition: { staggerChildren: 0.09, delayChildren: 0.25 } } };
 const item = {
@@ -12,7 +12,7 @@ const item = {
   show: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.9, ease: EASE } },
 };
 
-export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => void; onResume: () => void; profileId: ProfileId }) {
+export default function Hero({ onResume }: { onPlay: () => void; onResume: () => void; profileId: ProfileId }) {
   const ref = useRef<HTMLElement>(null);
   const fine = useFinePointer();
   const { scrollTo } = useSmoothScroll();
@@ -20,7 +20,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] });
   const imgY = useTransform(scrollYProgress, [0, 1], ['0%', '18%']);
   const imgScale = useTransform(scrollYProgress, [0, 1], [1, 1.12]);
-  const textY = useTransform(scrollYProgress, [0, 1], ['0%', '-30%']);
+
   const fade = useTransform(scrollYProgress, [0, 0.75], [1, 0]);
   const blackout = useTransform(scrollYProgress, [0.35, 1], [0, 1]);
 
@@ -34,7 +34,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
   const imgShiftX = useTransform(px, [-1, 1], [-10, 10]);
   const glowX = useTransform(px, [-1, 1], ['-6%', '6%']);
 
-  const meta = ['Python', 'SQL', 'scikit-learn', 'dbt · DuckDB'];
+  const meta = ['Python', 'SQL', 'scikit-learn', 'dbt', 'DuckDB'];
 
   return (
     <section
@@ -95,15 +95,13 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
 
       {/* copy */}
       <motion.div
-        className="gutter relative z-[4] flex min-h-[100svh] flex-col justify-end pb-16 pt-[54svh] sm:pb-20 lg:max-w-[52vw] lg:justify-center lg:pb-0 lg:pt-24"
-        style={{ y: textY, opacity: fade }}
+        className="gutter relative z-[4] flex min-h-[100svh] flex-col justify-end pb-16 pt-[54svh] sm:pb-20 lg:max-w-[52vw] lg:justify-center lg:pb-16 lg:pt-32"
+
         variants={container}
         initial="hidden"
         animate="show"
       >
-        <motion.div variants={item} className="mb-3 text-lg">
-          <SeriesMark />
-        </motion.div>
+
         <motion.h1 variants={item} className="font-display leading-[0.82] tracking-[0.02em] text-bone" style={{ fontSize: 'clamp(3.2rem, 6vw, 6.2rem)' }}>
           <span className="shimmer-text">{profile.fullName}</span>
         </motion.h1>
@@ -121,7 +119,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
           ))}
         </motion.div>
 
-        <motion.p variants={item} className="mt-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-bone/90 sm:text-xs sm:tracking-[0.34em]">
+        <motion.p variants={item} className="mt-4 text-base font-medium leading-7 text-bone">
           Open to graduate and junior data roles in Melbourne
         </motion.p>
 
@@ -130,41 +128,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
         </motion.p>
 
         <motion.p variants={item} className="mt-4 text-sm leading-6 text-[#ead8b8]">{profile.workRights}<br/>{profile.availability}</motion.p>
-        <motion.div variants={item} className="mt-8 flex flex-wrap items-center gap-3"><a href={profile.resumePdf} download className="rounded-md bg-[#ead8b8] px-6 py-3 font-semibold text-ink">Download résumé PDF ↓</a>
-          <Magnetic>
-            <button
-              type="button"
-              data-cursor="play"
-              onClick={onPlay}
-              className="flex min-h-12 items-center gap-3 rounded-md bg-bone px-6 py-3 text-[15px] font-bold text-ink transition hover:bg-white sm:px-8"
-            >
-              <span className="text-lg">↗</span> View Overview
-            </button>
-          </Magnetic>
-          <Magnetic>
-            {profileId === 'recruiter' ? (
-              <button type="button" onClick={onResume} className="glass flex min-h-12 items-center gap-3 rounded-md px-6 py-3 text-[15px] font-semibold text-bone transition hover:bg-white/15 sm:px-8">
-                <span className="text-lg">⤓</span> View Resume
-              </button>
-            ) : (
-              <button
-                type="button"
-                onClick={() => scrollTo('#originals')}
-                className="glass flex min-h-12 items-center gap-3 rounded-md px-6 py-3 text-[15px] font-semibold text-bone transition hover:bg-white/15 sm:px-8"
-              >
-                <span className="text-xl leading-none">＋</span> My Work
-              </button>
-            )}
-          </Magnetic>
-          <button
-            type="button"
-            onClick={() => scrollTo('#about')}
-            aria-label="More info"
-            className="flex h-12 w-12 items-center justify-center rounded-full border border-white/30 text-lg text-bone transition hover:border-bone hover:bg-white/10"
-          >
-            ⓘ
-          </button>
-        </motion.div>
+        <motion.div variants={item} className="mt-8 flex flex-wrap gap-3"><a href={profile.resumePdf} download className="btn-primary">Download résumé PDF ↓</a><button onClick={onResume} className="btn-secondary">View résumé</button><button onClick={() => scrollTo('#originals')} className="btn-secondary">View projects</button></motion.div>
       </motion.div>
 
       <motion.div aria-hidden className="pointer-events-none absolute inset-0 z-[5] bg-ink" style={{ opacity: blackout }} />

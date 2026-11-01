@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <>
-      <SectionHeading kicker="Background" title="About Me" />
+      <SectionHeading kicker="Background" title="About" />
       <div className="gutter grid items-center gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:gap-16">
         <motion.div
           className="mx-auto w-full max-w-md lg:max-w-none"
@@ -39,7 +39,7 @@ export default function About() {
                 <p className="text-[10px] font-bold tracking-[0.3em] text-crimson-2">PROFILE</p>
                 <p className="font-display text-3xl leading-none text-bone">{profile.displayName}</p>
               </div>
-              <span className="rounded border border-white/30 px-1.5 text-[10px] font-bold text-bone">DATA & ENGINEERING</span>
+              <span className="rounded border border-white/30 px-1.5 text-[10px] font-bold text-bone">Data Scientist &amp; Engineer</span>
             </div>
           </div>
         </Tilt>
@@ -53,7 +53,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 1, ease: EASE }}
           >
-            “{profile.intro}”
+            I enjoy turning a difficult technical question into something useful and understandable. Teaching keeps that focus practical: a system only helps when people can use it.
           </motion.p>
           <p className="mt-4 text-sm text-mist">· {profile.fullName}</p>
 

@@ -14,11 +14,11 @@ export type IntroSlide = {kicker:string;title:string;lines:string[];chips?:strin
 export type ProfileId = 'kathy'|'recruiter'|'developer'|'creative';
 export type SectionId = 'about'|'journey'|'originals'|'picks'|'skills'|'moments'|'story';
 
-const crimson: Palette = {"from": "#2b0e1b", "via": "#6b223f", "to": "#13090f", "accent": "#e4a4b5"};
+const crimson: Palette = {"from": "#2b0e1b", "via": "#6b223f", "to": "#13090f", "accent": "#e5c69b"};
 const amber: Palette = {"from": "#291a12", "via": "#83543b", "to": "#160e0b", "accent": "#e5c69b"};
-const ocean: Palette = {"from": "#21141c", "via": "#5c3d60", "to": "#140d11", "accent": "#d0b4df"};
-const violet: Palette = {"from": "#271522", "via": "#49334f", "to": "#140d13", "accent": "#bfa7ce"};
-const jade: Palette = {"from": "#24170f", "via": "#66503b", "to": "#160e0b", "accent": "#d2ad83"};
+const ocean: Palette = {"from": "#21141c", "via": "#5c3d60", "to": "#140d11", "accent": "#e5c69b"};
+const violet: Palette = {"from": "#271522", "via": "#49334f", "to": "#140d13", "accent": "#e5c69b"};
+const jade: Palette = {"from": "#24170f", "via": "#66503b", "to": "#160e0b", "accent": "#e5c69b"};
 export const profile = {
   "fullName": "Kathy",
   "displayName": "Kathy",
@@ -31,10 +31,10 @@ export const profile = {
     "ML Engineering",
     "Analytics Engineering"
   ],
-  "intro": "Master of Data Science student at Monash (2025–2026). Previously IBM watsonx.data (Presto). I build predictive models, reliable data pipelines and applied AI tools.",
+  "intro": "Postgraduate Data Science studies at Monash (2025–2026). Previously IBM watsonx.data (Presto). I build predictive models, reliable data pipelines and applied AI tools.",
   "location": "Melbourne, Australia",
   "workRights": "Temporary Graduate Visa (Subclass 485)",
-  "availability": "Available for full-time work from November 2026",
+  "availability": "Available now for full-time work",
   "email": "karthikapillai@gmail.com",
   "links": {
     "linkedin": "https://www.linkedin.com/in/karthikapillaikumar/",
@@ -57,7 +57,7 @@ export const education = [
     "school": "Monash University",
     "place": "Melbourne",
     "degree": "Master of Data Science",
-    "period": "2025 – 2026",
+    "period": "2025–2026",
     "score": "Postgraduate study"
   },
   {
@@ -65,7 +65,7 @@ export const education = [
     "place": "India",
     "degree": "B.Tech (Honours), Computer Science Engineering",
     "period": "",
-    "score": "Honours"
+    "score": ""
   }
 ];
 export const experience = [
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     "logline": "Predict battery capacity ten discharge cycles ahead with a random forest, using real NASA laboratory measurements and leave-one-battery-out evaluation.",
     "stack": [
       "Python",
-      "Scikit-learn",
+      "scikit-learn",
       "dbt",
       "DuckDB",
       "FastAPI",
@@ -145,7 +145,7 @@ export const projects: Project[] = [
       "from": "#2b0e1b",
       "via": "#6b223f",
       "to": "#13090f",
-      "accent": "#e4a4b5"
+      "accent": "#e5c69b"
     },
     "motif": "flow"
   },
@@ -156,9 +156,8 @@ export const projects: Project[] = [
     "genre": "SYSTEMS & DIAGNOSTICS",
     "logline": "Nexora (DataMedic) is an interactive demonstration of data pipeline diagnosis and recovery. It makes investigation steps visible so visitors can understand how a failure might be approached.",
     "stack": [
-      "Data engineering",
-      "Diagnostics",
-      "Interactive systems"
+      "JavaScript",
+      "JSON"
     ],
     "build": [
       "A working public demonstration presents synthetic scenarios and recorded results. The focus is explaining the diagnostic workflow and making system behaviour easier to understand."
@@ -222,7 +221,7 @@ export const projects: Project[] = [
       "from": "#21141c",
       "via": "#5c3d60",
       "to": "#140d11",
-      "accent": "#d0b4df"
+      "accent": "#e5c69b"
     },
     "motif": "flow"
   },
@@ -260,7 +259,7 @@ export const projects: Project[] = [
       "from": "#271522",
       "via": "#49334f",
       "to": "#140d13",
-      "accent": "#bfa7ce"
+      "accent": "#e5c69b"
     },
     "motif": "shield"
   },
@@ -296,7 +295,7 @@ export const projects: Project[] = [
       "from": "#24170f",
       "via": "#66503b",
       "to": "#160e0b",
-      "accent": "#d2ad83"
+      "accent": "#e5c69b"
     },
     "motif": "tenants"
   }
@@ -361,6 +360,14 @@ export const skillCategories: SkillCategory[] = [
       {
         "name": "JavaScript",
         "mono": "Js"
+      },
+      {
+        "name": "Go",
+        "mono": "Go"
+      },
+      {
+        "name": "C++",
+        "mono": "C++"
       }
     ]
   },
@@ -378,7 +385,7 @@ export const skillCategories: SkillCategory[] = [
         "mono": "sp"
       },
       {
-        "name": "Scikit-learn",
+        "name": "scikit-learn",
         "mono": "sk"
       },
       {
@@ -395,10 +402,6 @@ export const skillCategories: SkillCategory[] = [
       {
         "name": "FastAPI",
         "mono": "API"
-      },
-      {
-        "name": "Random Forest",
-        "mono": "RF"
       },
       {
         "name": "YOLOv8",
@@ -425,11 +428,11 @@ export const skillCategories: SkillCategory[] = [
       },
       {
         "name": "Semantic metrics",
-        "mono": "∑"
+        "mono": "\u2211"
       },
       {
         "name": "Data quality",
-        "mono": "✓"
+        "mono": "\u2713"
       }
     ]
   },
@@ -464,42 +467,13 @@ export const skillCategories: SkillCategory[] = [
       {
         "name": "Presto",
         "mono": "P"
-      },
-      {
-        "name": "Audit logging",
-        "mono": "Log"
-      },
-      {
-        "name": "Performance monitoring",
-        "mono": "↗"
-      },
-      {
-        "name": "Python tooling",
-        "mono": "Py"
-      }
-    ]
-  },
-  {
-    "id": "interests",
-    "title": "Interests",
-    "subtitle": "The next chapter",
-    "skills": [
-      {
-        "name": "Predictive modelling",
-        "mono": "ML"
-      },
-      {
-        "name": "Applied AI",
-        "mono": "AI"
-      },
-      {
-        "name": "Data systems",
-        "mono": "DS"
       }
     ]
   }
 ];
 export const skillEvidence: Record<string, string[]> = {
+  "Go": ["IBM watsonx.data"],
+  "C++": ["IBM watsonx.data"],
   "Python": [
     "Voltwise (portfolio project)"
   ],
@@ -518,7 +492,7 @@ export const skillEvidence: Record<string, string[]> = {
   "SciPy": [
     "Voltwise (portfolio project)"
   ],
-  "Scikit-learn": [
+  "scikit-learn": [
     "Voltwise (portfolio project)"
   ],
   "Model validation": [
@@ -602,7 +576,7 @@ export const seasons: Season[] = [
           "from": "#2b0e1b",
           "via": "#6b223f",
           "to": "#13090f",
-          "accent": "#e4a4b5"
+          "accent": "#e5c69b"
         }
       }
     ]
@@ -643,7 +617,7 @@ export const seasons: Season[] = [
           "from": "#21141c",
           "via": "#5c3d60",
           "to": "#140d11",
-          "accent": "#d0b4df"
+          "accent": "#e5c69b"
         }
       }
     ]
@@ -651,7 +625,7 @@ export const seasons: Season[] = [
   {
     "number": 3,
     "title": "Following the Data",
-    "period": "2025 – 2026",
+    "period": "2025–2026",
     "synopsis": "A new chapter at Monash University in Melbourne.",
     "episodes": [
       {
@@ -662,12 +636,12 @@ export const seasons: Season[] = [
           "Modelling",
           "Analysis"
         ],
-        "runtime": "2025 – 2026",
+        "runtime": "2025–2026",
         "palette": {
           "from": "#21141c",
           "via": "#5c3d60",
           "to": "#140d11",
-          "accent": "#d0b4df"
+          "accent": "#e5c69b"
         }
       },
       {
@@ -678,12 +652,12 @@ export const seasons: Season[] = [
           "Teaching",
           "Python"
         ],
-        "runtime": "2025 – 2026",
+        "runtime": "2025–2026",
         "palette": {
           "from": "#271522",
           "via": "#49334f",
           "to": "#140d13",
-          "accent": "#bfa7ce"
+          "accent": "#e5c69b"
         }
       }
     ]
@@ -696,7 +670,7 @@ export const seasons: Season[] = [
     "episodes": [
       {
         "code": "S04 E01",
-        "title": "The Forecaster",
+        "title": "Battery capacity forecasting",
         "description": "Voltwise: ten-cycle capacity forecasts evaluated on four held-out NASA laboratory cells.",
         "tags": [
           "Python",
@@ -708,12 +682,12 @@ export const seasons: Season[] = [
           "from": "#271522",
           "via": "#49334f",
           "to": "#140d13",
-          "accent": "#bfa7ce"
+          "accent": "#e5c69b"
         }
       },
       {
         "code": "S04 E02",
-        "title": "The Investigator",
+        "title": "Pipeline diagnosis",
         "description": "Nexora (DataMedic): an interactive pipeline diagnosis demonstration with synthetic scenarios.",
         "tags": [
           "Diagnostics",
@@ -724,12 +698,12 @@ export const seasons: Season[] = [
           "from": "#24170f",
           "via": "#66503b",
           "to": "#160e0b",
-          "accent": "#d2ad83"
+          "accent": "#e5c69b"
         }
       },
       {
         "code": "S04 E03",
-        "title": "The Explorer",
+        "title": "Melbourne walking routes",
         "description": "Sensory-aware walking routes using Melbourne open-data snapshots.",
         "tags": [
           "Open data",
@@ -740,7 +714,7 @@ export const seasons: Season[] = [
           "from": "#2b0e1b",
           "via": "#6b223f",
           "to": "#13090f",
-          "accent": "#e4a4b5"
+          "accent": "#e5c69b"
         }
       }
     ]
@@ -765,7 +739,7 @@ export const seasons: Season[] = [
           "from": "#24170f",
           "via": "#66503b",
           "to": "#160e0b",
-          "accent": "#d2ad83"
+          "accent": "#e5c69b"
         }
       }
     ]
@@ -780,7 +754,7 @@ export const topPicks: TopPick[] = [
       "from": "#2b0e1b",
       "via": "#6b223f",
       "to": "#13090f",
-      "accent": "#e4a4b5"
+      "accent": "#e5c69b"
     }
   },
   {
@@ -802,7 +776,7 @@ export const topPicks: TopPick[] = [
       "from": "#21141c",
       "via": "#5c3d60",
       "to": "#140d11",
-      "accent": "#d0b4df"
+      "accent": "#e5c69b"
     }
   },
   {
@@ -813,7 +787,7 @@ export const topPicks: TopPick[] = [
       "from": "#271522",
       "via": "#49334f",
       "to": "#140d13",
-      "accent": "#bfa7ce"
+      "accent": "#e5c69b"
     }
   },
   {
@@ -824,7 +798,7 @@ export const topPicks: TopPick[] = [
       "from": "#24170f",
       "via": "#66503b",
       "to": "#160e0b",
-      "accent": "#d2ad83"
+      "accent": "#e5c69b"
     }
   },
   {
@@ -835,7 +809,7 @@ export const topPicks: TopPick[] = [
       "from": "#2b0e1b",
       "via": "#6b223f",
       "to": "#13090f",
-      "accent": "#e4a4b5"
+      "accent": "#e5c69b"
     }
   },
   {
@@ -857,7 +831,7 @@ export const topPicks: TopPick[] = [
       "from": "#21141c",
       "via": "#5c3d60",
       "to": "#140d11",
-      "accent": "#d0b4df"
+      "accent": "#e5c69b"
     }
   },
   {
@@ -868,7 +842,7 @@ export const topPicks: TopPick[] = [
       "from": "#271522",
       "via": "#49334f",
       "to": "#140d13",
-      "accent": "#bfa7ce"
+      "accent": "#e5c69b"
     }
   },
   {
@@ -879,7 +853,7 @@ export const topPicks: TopPick[] = [
       "from": "#24170f",
       "via": "#66503b",
       "to": "#160e0b",
-      "accent": "#d2ad83"
+      "accent": "#e5c69b"
     }
   }
 ];
@@ -921,7 +895,7 @@ export const introSlides: IntroSlide[] = [
     "kicker": "The toolkit",
     "title": "From data to decisions",
     "lines": [
-      "Python · SQL · Scikit-learn · dbt · DuckDB",
+      "Python · SQL · scikit-learn · dbt · DuckDB",
       "FastAPI · Ollama · GitHub Actions"
     ]
   },
@@ -966,11 +940,11 @@ export const viewerProfiles: {
 ];
 
 export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: string; palette: Palette }> = {
-  about: { nav: 'About', card: 'About Me', meta: 'Background • Education & experience', palette: violet },
-  journey: { nav: 'Journey', card: 'Career Journey', meta: `${seasons.length} Stages • ${seasons.reduce((n, s) => n + s.episodes.length, 0)} Milestones`, palette: amber },
-  originals: { nav: 'Projects', card: 'My Projects', meta: `${projects.length} Projects • 2026`, palette: crimson },
+  about: { nav: 'About', card: 'About', meta: 'Background • Education & experience', palette: violet },
+  journey: { nav: 'Journey', card: 'Journey', meta: `${seasons.length} Stages • ${seasons.reduce((n, s) => n + s.episodes.length, 0)} Milestones`, palette: amber },
+  originals: { nav: 'Projects', card: 'Projects', meta: `${projects.length} Projects • 2026`, palette: crimson },
   picks: { nav: 'Key Strengths', card: 'Key Strengths', meta: '10 selected strengths', palette: jade },
-  skills: { nav: 'Skills', card: 'My Skills', meta: `${skillCategories.length} Categories`, palette: ocean },
+  skills: { nav: 'Skills', card: 'Skills', meta: `${skillCategories.length} Categories`, palette: ocean },
   moments: { nav: 'Highlights', card: 'My Highlights', meta: `${achievements.length} Career & Project Highlights`, palette: crimson },
-  story: { nav: 'Experience', card: 'Career Summary', meta: 'Career summary • View & print', palette: violet },
+  story: { nav: 'Experience', card: 'Experience', meta: 'Experience and education', palette: violet },
 };

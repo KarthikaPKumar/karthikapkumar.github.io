@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { skillCategories, skillEvidence, type Skill } from '../data/portfolio';
 import { EASE, SectionHeading } from './fx';
 
-const HUES = ['#e4a4b5', '#d0b4df', '#d2ad83', '#e5c69b', '#bfa7ce', '#d8a084', '#d4bfc5'];
+const HUES = ['#e5c69b'];
 
 export default function Skills() {
   const [cat, setCat] = useState(0);
@@ -12,11 +12,11 @@ export default function Skills() {
 
   return (
     <>
-      <SectionHeading kicker="Capabilities" title="Skills & Evidence" aside={<p className="max-w-xs text-sm text-mist">Source links show what is implemented. Explore the categories below for additional experience.</p>} />
+      <SectionHeading kicker="Capabilities" title="Skills" aside={<p className="max-w-xs text-sm text-mist">Source links show what is implemented. Explore the categories below for additional experience.</p>} />
 
-      <div className="gutter mb-10 grid gap-4 md:grid-cols-3"><article className="rounded-lg border border-white/10 bg-ink-2 p-5"><h3 className="text-base font-semibold text-bone">Python · scikit-learn</h3><p className="mt-3 text-sm leading-6 text-mist">Predictive modelling and held-out evaluation on four NASA laboratory cells.</p><a className="mt-4 inline-block text-sm text-[#ead8b8] underline underline-offset-4" href="https://github.com/KarthikaPKumar/voltwise" target="_blank" rel="noreferrer">Model, evaluation & limitations ↗</a></article><article className="rounded-lg border border-white/10 bg-ink-2 p-5"><h3 className="text-base font-semibold text-bone">SQL · dbt · DuckDB</h3><p className="mt-3 text-sm leading-6 text-mist">SQL transformations, shared metric definitions and data-quality checks in Voltwise.</p><a className="mt-4 inline-block text-sm text-[#ead8b8] underline underline-offset-4" href="https://github.com/KarthikaPKumar/voltwise/tree/main/analytics" target="_blank" rel="noreferrer">SQL models & dbt tests ↗</a></article><article className="rounded-lg border border-white/10 bg-ink-2 p-5"><h3 className="text-base font-semibold text-bone">FastAPI · Ollama</h3><p className="mt-3 text-sm leading-6 text-mist">Local API and tool-using AI agent with bounded, read-only access to metrics. Requires local setup.</p><a className="mt-4 inline-block text-sm text-[#ead8b8] underline underline-offset-4" href="https://github.com/KarthikaPKumar/voltwise/tree/main/service" target="_blank" rel="noreferrer">API & local agent source ↗</a></article></div><div className="gutter grid gap-8 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-14">
+      <div className="gutter mb-10 grid gap-4 md:grid-cols-3"><article className="rounded-lg border border-white/10 bg-ink-2 p-5"><h3 className="text-base font-semibold text-bone">Python · scikit-learn</h3><p className="mt-3 text-sm leading-6 text-mist">Predictive modelling and held-out evaluation on four NASA laboratory cells.</p><a className="mt-4 inline-block text-sm text-[#ead8b8] underline underline-offset-4" href="https://github.com/KarthikaPKumar/voltwise" target="_blank" rel="noreferrer">Model, evaluation & limitations ↗</a></article><article className="rounded-lg border border-white/10 bg-ink-2 p-5"><h3 className="text-base font-semibold text-bone">SQL · dbt · DuckDB</h3><p className="mt-3 text-sm leading-6 text-mist">SQL transformations, shared metric definitions and data-quality checks in Voltwise.</p><a className="mt-4 inline-block text-sm text-[#ead8b8] underline underline-offset-4" href="https://github.com/KarthikaPKumar/voltwise/tree/main/analytics" target="_blank" rel="noreferrer">SQL models & dbt tests ↗</a></article><article className="rounded-lg border border-white/10 bg-ink-2 p-5"><h3 className="text-base font-semibold text-bone">FastAPI · Ollama</h3><p className="mt-3 text-sm leading-6 text-mist">Local API and tool-using AI agent with bounded, read-only access to metrics. Requires local setup.</p><a className="mt-4 inline-block text-sm text-[#ead8b8] underline underline-offset-4" href="https://github.com/KarthikaPKumar/voltwise/tree/main/service" target="_blank" rel="noreferrer">API & local agent source ↗</a></article></div><div className="gutter grid gap-8 ">
         {/* genre list */}
-        <div className="rail -mx-[var(--gutter)] flex gap-2 overflow-x-auto px-[var(--gutter)] lg:mx-0 lg:flex-col lg:gap-1 lg:overflow-visible lg:px-0" role="tablist" aria-label="Skill categories">
+        <div className="rail -mx-[var(--gutter)] flex gap-2 overflow-x-auto px-[var(--gutter)] lg:mx-0 lg:gap-2 lg:px-0" role="tablist" aria-label="Skill categories">
           {skillCategories.map((c, i) => (
             <button
               key={c.id}
@@ -37,7 +37,7 @@ export default function Skills() {
         </div>
 
         {/* skill cards */}
-        <div className="min-h-[340px]">
+        <div className="min-h-0">
           <AnimatePresence mode="wait">
             <motion.div key={category.id} initial="hidden" animate="show" exit="exit" transition={{ staggerChildren: 0.05 }}>
               <motion.p
@@ -60,56 +60,6 @@ export default function Skills() {
 }
 
 function SkillCard({ skill, hue }: { skill: Skill; hue: string }) {
-  const [open, setOpen] = useState(false);
-  const evidence = skillEvidence[skill.name];
-
-  return (
-    <motion.button
-      type="button"
-      onHoverStart={() => setOpen(true)}
-      onHoverEnd={() => setOpen(false)}
-      onClick={() => setOpen((o) => !o)}
-      aria-expanded={open}
-      variants={{
-        hidden: { opacity: 0, y: 24, scale: 0.94, filter: 'blur(6px)' },
-        show: { opacity: 1, y: 0, scale: 1, filter: 'blur(0px)', transition: { duration: 0.55, ease: EASE } },
-        exit: { opacity: 0, y: -12, transition: { duration: 0.2 } },
-      }}
-      whileHover={{ y: -6 }}
-      className="group relative flex min-h-[148px] flex-col overflow-hidden rounded-xl bg-ink-2 p-4 text-left ring-1 ring-white/10 transition-shadow duration-500 hover:ring-white/20"
-      style={{ boxShadow: open ? `0 18px 50px -12px ${hue}55, 0 0 0 1px ${hue}66` : undefined }}
-    >
-      <div aria-hidden className="absolute -right-10 -top-10 h-32 w-32 rounded-full opacity-0 blur-2xl transition duration-500 group-hover:opacity-60" style={{ background: hue }} />
-      <motion.span
-        className="relative flex h-12 w-12 items-center justify-center rounded-lg font-display text-2xl tracking-wide"
-        style={{ background: `${hue}1f`, color: hue, boxShadow: `inset 0 0 0 1px ${hue}55` }}
-        animate={open ? { rotate: [0, -8, 8, 0], scale: 1.08 } : { rotate: 0, scale: 1 }}
-        transition={{ duration: 0.5 }}
-        aria-hidden
-      >
-        {skill.mono}
-      </motion.span>
-      <span className="relative mt-4 flex items-center gap-2 text-[15px] font-semibold text-bone">
-        {skill.name}
-        {skill.note && (
-          <span className="rounded px-1.5 py-px text-[9px] font-bold uppercase tracking-wider text-ink" style={{ background: hue }}>
-            {skill.note}
-          </span>
-        )}
-      </span>
-      <AnimatePresence initial={false}>
-        {open && evidence && (
-          <motion.span
-            className="relative mt-2 block text-[11px] leading-snug text-mist"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            {evidence.join(' · ')}
-          </motion.span>
-        )}
-      </AnimatePresence>
-    </motion.button>
-  );
+ const evidence=skillEvidence[skill.name];
+ return <article className="rounded-xl border border-white/10 bg-ink-2 p-5"><span aria-hidden className="font-display text-2xl" style={{color:hue}}>{skill.mono}</span><h3 className="mt-3 text-base font-semibold text-bone">{skill.name}</h3><p className="mt-2 text-sm leading-6 text-mist">{evidence?.join(' · ') ?? 'Project implementation'}</p></article>;
 }

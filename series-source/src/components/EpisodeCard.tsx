@@ -7,7 +7,7 @@ export default function EpisodeCard({ episode, index }: { episode: Episode; inde
   const [season, ep] = episode.code.split(' ');
   return (
     <motion.article
-      className="w-[80vw] shrink-0 snap-start sm:w-[52vw] md:w-[38vw] lg:w-[30vw] xl:w-[26vw]"
+      className="w-full min-w-0"
       initial={{ opacity: 0, y: 30, rotateY: -8 }}
       animate={{ opacity: 1, y: 0, rotateY: 0 }}
       transition={{ duration: 0.7, delay: index * 0.1, ease: EASE }}

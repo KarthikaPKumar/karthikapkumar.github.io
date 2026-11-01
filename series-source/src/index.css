@@ -5,10 +5,10 @@
   --color-ink-2: #1b1116;
   --color-ink-3: #2b1b23;
   --color-crimson: #7f2944;
-  --color-crimson-2: #e4a4b5;
+  --color-crimson-2: #e5c69b;
   --color-bone: #f5ede4;
   --color-mist: #c9b8bc;
-  --color-smoke: #aa9299;
+  --color-smoke: #c9b8bc;
   --font-display: 'Bebas Neue', 'Oswald', Impact, sans-serif;
   --font-serif: 'Instrument Serif', Georgia, serif;
   --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
@@ -155,3 +155,7 @@ a:focus-visible {
 }
 
 @media print { body {background:white!important;color:black!important} #root>div:not(.resume-overlay),.grain,.resume-controls {display:none!important} .resume-overlay{position:static!important;overflow:visible!important;background:white!important;color:black!important;padding:0!important} .resume-overlay *{background:white!important;color:black!important;box-shadow:none!important} .resume-overlay article{border:0!important} }
+
+.btn-primary,.btn-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:12px 20px;border-radius:6px;font-size:15px;font-weight:600;text-decoration:none;gap:8px;line-height:1.4}.btn-primary{background:#e5c69b;color:#211b18;border:1px solid #e5c69b}.btn-secondary{background:transparent;color:#f5ede4;border:1px solid #7c6a70}.btn-primary:hover{background:#f0dab8}.btn-secondary:hover{border-color:#e5c69b}:where(a,button,summary):focus-visible{outline:2px solid #e5c69b;outline-offset:4px}
+
+.skip-link{position:fixed;left:16px;top:12px;z-index:300;background:#e5c69b;color:#211b18;padding:12px 18px;transform:translateY(-200%)}.skip-link:focus{transform:translateY(0)}

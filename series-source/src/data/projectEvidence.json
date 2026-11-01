@@ -1,0 +1,148 @@
+{
+  "voltwise": {
+    "title": "Voltwise",
+    "status": "Measured prototype",
+    "tools": [
+      "Python",
+      "SQL",
+      "scikit-learn",
+      "dbt",
+      "DuckDB",
+      "FastAPI",
+      "Ollama"
+    ],
+    "summary": "Forecast battery capacity ten discharge cycles ahead from NASA laboratory measurements. Compare held-out predictions against a persistence baseline and inspect the tested analytics pipeline.",
+    "result": "0.024 Ah MAE \u00b7 560 held-out windows \u00b7 44.7% lower error than persistence",
+    "image": "/kathy/assets/voltwise-capacity.svg",
+    "alt": "Recorded capacity degradation of NASA laboratory battery B0005 over 168 discharge cycles",
+    "caption": "NASA laboratory cell B0005: 168 recorded discharge cycles. Capacity is measured in ampere-hours (Ah).",
+    "steps": [
+      "NASA battery files",
+      "Python cycle extraction",
+      "Leave-one-cell-out evaluation",
+      "Random forest forecasts",
+      "SQL / dbt / DuckDB metrics",
+      "Static dashboard + optional local API"
+    ],
+    "scope": "Implemented pipeline; the Ollama agent and FastAPI service run locally.",
+    "failure": "Cell-level holdout limits leakage between training and evaluation. Data checks reject invalid forecast populations. Four laboratory cells do not establish vehicle-fleet reliability.",
+    "scale": "Four cells and 560 held-out forecast windows. No production throughput or latency benchmark is claimed.",
+    "cost": "The public dashboard is static. Running the local model and agent uses your own computer; no hosted LLM service is required.",
+    "security": "The local agent exposes bounded read-only metric tools, not arbitrary SQL, shell access or data writes.",
+    "source": "https://github.com/KarthikaPKumar/voltwise",
+    "live": "https://karthikapkumar.github.io/voltwise/"
+  },
+  "senseway": {
+    "title": "Sensory-Aware Route Planner",
+    "status": "Open-data prototype",
+    "tools": [
+      "Python",
+      "JavaScript",
+      "JSON",
+      "OpenStreetMap",
+      "GitHub Actions"
+    ],
+    "summary": "Calculate walking routes on a real central-Melbourne street graph. Pedestrian-counter snapshots add context only when freshness and reporting-coverage checks pass.",
+    "result": "16,386 graph nodes \u00b7 18,772 walking segments \u00b7 13,858 addresses",
+    "image": "/kathy/assets/senseway-output.png",
+    "alt": "Screenshot of the live Melbourne route planner with mapped walking streets and a calculated path",
+    "caption": "Actual demo, 1 November 2026. Map: \u00a9 OpenStreetMap contributors (ODbL). Council data: City of Melbourne (CC BY).",
+    "steps": [
+      "OSM + Melbourne open data",
+      "Python snapshot extraction",
+      "Validate coverage and timestamps",
+      "Versioned JSON files",
+      "Browser-local Dijkstra routing",
+      "Show routes and missing-data states"
+    ],
+    "scope": "Implemented static demo. Retained AWS backend code is a separate, undeployed path.",
+    "failure": "Stale counters are excluded. With no eligible observations, activity-based routing is unavailable while shortest-path routing still works. Noise and lighting remain unknown.",
+    "scale": "CBD extract: 16,386 connected nodes and 18,772 segments. This is data coverage, not measured user impact or routing latency.",
+    "cost": "GitHub Pages serves static JSON and JavaScript. There is no live database or paid routing API in this demo.",
+    "security": "Address search and route calculation run in the browser. Journeys are not submitted to a remote routing service.",
+    "source": "https://github.com/KarthikaPKumar/Serverless-Sensory-Aware-Router",
+    "live": "https://karthikapkumar.github.io/Serverless-Sensory-Aware-Router/"
+  },
+  "nexora": {
+    "title": "Nexora (DataMedic)",
+    "status": "Synthetic demo",
+    "tools": [
+      "JavaScript",
+      "JSON"
+    ],
+    "summary": "Step through pipeline diagnosis and recovery using recorded synthetic scenarios. The demo explains investigation steps; it does not repair a live data platform.",
+    "result": "Recorded scenarios only. No production recovery-time benchmark.",
+    "image": "",
+    "alt": "",
+    "caption": "",
+    "steps": [
+      "Seeded synthetic scenarios",
+      "Recorded engine results",
+      "Compiled browser demo",
+      "Select a failure scenario",
+      "Review diagnosis and recovery playback"
+    ],
+    "scope": "Public repository contains compiled assets and synthetic results, not an operational backend.",
+    "failure": "A recorded recovery cannot demonstrate recovery from unseen incidents. A live diagnostic engine would need separate integration and evaluation.",
+    "scale": "No measured production latency, throughput or recovery rate is published.",
+    "cost": "Static demo with no database or running backend.",
+    "security": "No company data or credentials are included. Browser selections are temporary.",
+    "source": "https://github.com/KarthikaPKumar/Nexora-demo",
+    "live": "https://karthikapkumar.github.io/Nexora-demo/"
+  },
+  "wildlife": {
+    "title": "Wildlife Detection API",
+    "status": "Code & architecture",
+    "tools": [
+      "Python",
+      "FastAPI",
+      "YOLOv8",
+      "ONNX Runtime",
+      "Docker",
+      "Kubernetes",
+      "Terraform"
+    ],
+    "summary": "An image-inference API architecture combining YOLOv8, FastAPI and container deployment. The repository documents validation, readiness probes and infrastructure configuration.",
+    "result": "No published wildlife mAP or reproducible latency result. Not featured as a measured outcome.",
+    "image": "",
+    "alt": "",
+    "caption": "",
+    "steps": [
+      "Submitted image",
+      "FastAPI request validation",
+      "Decode and resize",
+      "YOLOv8 / ONNX inference",
+      "JSON detections or annotated image",
+      "Kubernetes health and readiness probes"
+    ],
+    "scope": "Architecture follows the repository documentation. No current public endpoint is verified.",
+    "failure": "Readiness checks prevent traffic before model startup. ONNX has a PyTorch fallback. Task-specific accuracy and overload behaviour still need evaluation.",
+    "scale": "Replica configuration and Locust tooling are documented; a completed load-test result is not supplied.",
+    "cost": "OCI compute and Kubernetes hosting would require provisioning and a separate cost estimate. No running cloud cost is claimed.",
+    "security": "Authentication, rate limiting, scanning and production observability are listed as future work in the repository.",
+    "source": "https://github.com/KarthikaPKumar/Cloud-Native-Wildlife-Detection-Model",
+    "live": ""
+  },
+  "speech": {
+    "title": "Speech Analysis Tool",
+    "status": "Concept",
+    "tools": [],
+    "summary": "A proposed speech-feedback tool covering sentiment, speech rate, grammar and pronunciation. The current repository describes the idea, without a validated implementation.",
+    "result": "No measured model quality or operational demo. Retained as an early concept.",
+    "image": "",
+    "alt": "",
+    "caption": "",
+    "steps": [
+      "Proposed audio or text input",
+      "Proposed language analysis",
+      "Proposed feedback report"
+    ],
+    "scope": "Conceptual flow from the README, not a deployed system.",
+    "failure": "No evaluation dataset, error analysis or performance results are supplied.",
+    "scale": "No scale or latency claims.",
+    "cost": "No deployed service; costs are not established.",
+    "security": "Any future implementation would require consent, retention limits and protection for submitted speech. It is not an employment-assessment system.",
+    "source": "https://github.com/KarthikaPKumar/SAP",
+    "live": ""
+  }
+}

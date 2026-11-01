@@ -18,10 +18,10 @@ export default function ContinueWatching({ order }: { order: SectionId[] }) {
   const rail = useRef<HTMLDivElement>(null);
 
   return (
-    <section aria-labelledby="continue-title" className="relative z-10 -mt-10 pb-10 sm:-mt-16">
+    <section aria-label="On this page" className="relative z-10 mt-8 pb-4">
       <div className="gutter mb-4 flex items-end justify-between">
-        <RevealText as="h2" text="Explore My Work" className="font-sans text-lg font-semibold tracking-tight text-bone sm:text-2xl" />
-        <span className="hidden text-xs text-smoke sm:block">Your exploration progress</span>
+        <RevealText as="h2" text="On this page" className="font-sans text-lg font-semibold tracking-tight text-bone sm:text-2xl" />
+        <span className="hidden text-xs text-smoke sm:block"></span>
       </div>
       <div className="group/rail relative">
         <div ref={rail} className="rail gutter flex snap-x snap-mandatory gap-3 overflow-x-auto py-8 sm:gap-4" data-cursor={fine ? undefined : 'drag'}>

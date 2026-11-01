@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="720" height="405" preserveAspectRatio="xMinYMin meet" viewBox="0 0 720 405" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="720" height="405"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-405)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="720" height="405" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(95%,94%,91%); fill-rule: evenodd;"/>
+			<text x="70" y="368" style="font-family: Helvetica-Bold; font-size: 19px;fill: rgb(18%,14%,16%); stroke:none;" transform="translate(0,736) scale(1,-1)">NASA B0005: measured battery capacity</text>
+			<g transform="">
+				<g transform="">
+					<g transform="">
+						<path d="M 72,86 L 674,86 Z" style="stroke: rgb(57%,52%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 72,86 L 72,81 Z" style="stroke: rgb(57%,52%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 212.586826,86 L 212.586826,81 Z" style="stroke: rgb(57%,52%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 356.778443,86 L 356.778443,81 Z" style="stroke: rgb(57%,52%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 500.97006,86 L 500.97006,81 Z" style="stroke: rgb(57%,52%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 674,86 L 674,81 Z" style="stroke: rgb(57%,52%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,72,81)">
+							<text x="-3.0" y="-12.0" style="font-family: Times-Roman; font-size: 12px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,-24) scale(1,-1)">1</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,212.586826,81)">
+							<text x="-6.0" y="-12.0" style="font-family: Times-Roman; font-size: 12px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,-24) scale(1,-1)">40</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,356.778443,81)">
+							<text x="-6.0" y="-12.0" style="font-family: Times-Roman; font-size: 12px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,-24) scale(1,-1)">80</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,500.97006,81)">
+							<text x="-9.0" y="-12.0" style="font-family: Times-Roman; font-size: 12px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,-24) scale(1,-1)">120</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,674,81)">
+							<text x="-9.0" y="-12.0" style="font-family: Times-Roman; font-size: 12px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,-24) scale(1,-1)">168</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 72,86 L 72,326 Z" style="stroke: rgb(57%,52%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 72,86 L 67,86 Z" style="stroke: rgb(57%,52%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 72,146 L 67,146 Z" style="stroke: rgb(57%,52%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 72,206 L 67,206 Z" style="stroke: rgb(57%,52%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 72,266 L 67,266 Z" style="stroke: rgb(57%,52%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 72,326 L 67,326 Z" style="stroke: rgb(57%,52%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,67,86)">
+							<text x="-15.0" y="-4.800000000000001" style="font-family: Times-Roman; font-size: 12px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,-9) scale(1,-1)">1.2</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,67,146)">
+							<text x="-15.0" y="-4.800000000000001" style="font-family: Times-Roman; font-size: 12px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,-9) scale(1,-1)">1.4</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,67,206)">
+							<text x="-15.0" y="-4.800000000000001" style="font-family: Times-Roman; font-size: 12px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,-9) scale(1,-1)">1.6</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,67,266)">
+							<text x="-15.0" y="-4.800000000000001" style="font-family: Times-Roman; font-size: 12px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,-9) scale(1,-1)">1.8</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,67,326)">
+							<text x="-6.0" y="-4.800000000000001" style="font-family: Times-Roman; font-size: 12px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,-9) scale(1,-1)">2</text>
+						</g>
+					</g>
+				</g>
+				<path d="M 72,146 L 674,146 Z" style="stroke: rgb(83%,80%,81%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 72,206 L 674,206 Z" style="stroke: rgb(83%,80%,81%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 72,266 L 674,266 Z" style="stroke: rgb(83%,80%,81%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 72,326 L 674,326 Z" style="stroke: rgb(83%,80%,81%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<g transform="">
+					<polyline points="72 282.9462, 75.60479 279.8982, 79.20958 276.6048, 82.81437 276.5788, 86.41916 276.3937, 90.02395 276.6985, 93.62874 276.5438, 97.23353 273.727, 100.8383 273.4322, 104.4431 273.384, 108.0479 273.3859, 111.6527 270.2606, 115.2575 270.1256, 118.8623 270.0321, 122.4671 266.7794, 126.0719 266.6321, 129.6766 266.7739, 133.2814 266.9205, 136.8862 266.8333, 140.491 280.1078, 144.0958 280.2252, 147.7006 276.8532, 151.3054 273.7342, 154.9102 273.5341, 158.515 273.6745, 162.1198 270.2093, 165.7246 270.4308, 169.3293 270.1908, 172.9341 266.8297, 176.5389 267.2231, 180.1437 281.5408, 183.7485 275.2112, 187.3533 271.9712, 190.9581 268.7924, 194.5629 267.383, 198.1677 265.8131, 201.7725 262.533, 205.3772 260.8769, 208.982 257.9101, 212.5868 257.9113, 216.1916 256.3616, 219.7964 254.6945, 223.4012 256.2852, 227.006 254.8005, 230.6108 251.5191, 234.2156 248.5549, 237.8204 246.8274, 241.4251 264.0872, 245.0299 260.9567, 248.6347 256.2093, 252.2395 253.1053, 255.8443 250.0612, 259.4491 248.5152, 263.0539 246.9268, 266.6587 243.8965, 270.2635 240.742, 273.8683 239.16, 277.4731 237.8043, 281.0778 236.0933, 284.6826 234.374, 288.2874 231.4709, 291.8922 228.3422, 295.497 228.3708, 299.1018 225.1149, 302.7066 223.7042, 306.3114 222.1562, 309.9162 218.7961, 313.521 217.3574, 317.1257 215.8205, 320.7305 214.3259, 324.3353 212.6376, 327.9401 209.3977, 331.5449 207.9689, 335.1497 206.4543, 338.7545 203.1108, 342.3593 201.7367, 345.9641 201.4829, 349.5689 204.6579, 353.1737 198.4191, 356.7784 195.4706, 360.3832 193.9298, 363.988 193.8445, 367.5928 192.4068, 371.1976 190.6622, 374.8024 187.471, 378.4072 184.3743, 382.012 184.5576, 385.6168 182.7942, 389.2216 181.2458, 392.8263 207.7457, 396.4311 195.1547, 400.0359 190.4275, 403.6407 185.7127, 407.2455 184.0858, 410.8503 181.0872, 414.4551 179.5693, 418.0599 177.9692, 421.6647 176.4636, 425.2695 173.2533, 428.8743 171.7605, 432.479 170.1241, 436.0838 168.5629, 439.6886 171.7711, 443.2934 174.8275, 446.8982 170.2402, 450.503 166.9263, 454.1078 162.1704, 457.7126 162.2439, 461.3174 162.5071, 464.9222 160.7126, 468.5269 157.6013, 472.1317 156.0336, 475.7365 156.0188, 479.3413 154.4195, 482.9461 152.8761, 486.5509 151.2287, 490.1557 149.7228, 493.7605 149.7736, 497.3653 148.2795, 500.9701 156.0176, 504.5749 157.4765, 508.1796 151.2064, 511.7844 148.0945, 515.3892 146.3611, 518.994 145.0102, 522.5988 143.3854, 526.2036 141.8686, 529.8084 140.131, 533.4132 138.5709, 537.018 137.1538, 540.6228 137.1526, 544.2275 135.4207, 547.8323 138.6176, 551.4371 141.8335, 555.0419 136.955, 558.6467 135.4348, 562.2515 132.2966, 565.8563 132.3925, 569.4611 132.4112, 573.0659 130.7945, 576.6707 129.2568, 580.2754 127.6974, 583.8802 127.6744, 587.485 126.202, 591.0898 124.5933, 594.6946 122.9513, 598.2994 121.4507, 601.9042 121.5399, 605.509 121.4879, 609.1138 123.1617, 612.7186 134.0365, 616.3234 127.8592, 619.9281 124.7086, 623.5329 123.1022, 627.1377 121.5902, 630.7425 120.0425, 634.3473 119.9606, 637.9521 118.3388, 641.5569 116.9099, 645.1617 117.0072, 648.7665 117.023, 652.3713 115.3661, 655.976 115.4221, 659.5808 114.0391, 663.1856 112.401, 666.7904 112.2358, 670.3952 118.7046, 674 123.5238" style="stroke: rgb(49%,16%,26%); stroke-linecap: round; stroke-width: 2.5; fill: None; fill-rule: evenodd;"/>
+				</g>
+			</g>
+			<text x="280" y="47" style="font-family: Helvetica; font-size: 14px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,94) scale(1,-1)">Discharge cycle</text>
+			<text x="13" y="338" style="font-family: Helvetica; font-size: 14px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,676) scale(1,-1)">Ah</text>
+			<text x="72" y="18" style="font-family: Helvetica; font-size: 11px;fill: rgb(31%,26%,29%); stroke:none;" transform="translate(0,36) scale(1,-1)">168 recorded cycles · laboratory measurements, not vehicle-fleet data</text>
+		</g>
+	</g>
+</svg>
