@@ -79,7 +79,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
           transition={{ duration: 1.6, ease: EASE, delay: 0.1 }}
         >
           {/* rim light ring */}
-          <div aria-hidden className="absolute bottom-[8%] left-1/2 h-[78%] w-[78%] -translate-x-1/2 rounded-full border border-crimson-2/20 shadow-[0_0_120px_rgba(127,41,68,0.35),inset_0_0_80px_rgba(127,41,68,0.18)]" />
+          <div aria-hidden className="absolute bottom-[8%] left-1/2 h-[78%] w-[78%] -translate-x-1/2 rounded-full border border-[#e3c68b]/30 bg-[radial-gradient(ellipse_at_50%_38%,#f2dfb8_0%,#bc965b_42%,#453220_70%,transparent_78%)] opacity-70 shadow-[0_0_100px_rgba(215,179,111,0.18)]" />
           <img
             src={profile.portrait.src}
             srcSet={profile.portrait.srcSet}

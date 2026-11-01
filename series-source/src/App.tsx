@@ -1,6 +1,6 @@
 import { lazy, Suspense, useCallback, useEffect, useState, type ReactNode } from 'react';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
-import { viewerProfiles, type ProfileId, type Project, type SectionId } from './data/portfolio';
+import { profile, viewerProfiles, type ProfileId, type Project, type SectionId } from './data/portfolio';
 import { SmoothScrollProvider, useSmoothScroll } from './hooks/smoothScroll';
 import CustomCursor from './components/CustomCursor';
 import OpeningSequence from './components/OpeningSequence';
@@ -117,6 +117,8 @@ function Series() {
         <motion.div initial={{ opacity: 0, scale: 1.03, filter: 'blur(10px)' }} animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }} transition={{ duration: 1, ease: EASE }}>
           <Navbar order={order} profileId={profileId} onSwitch={pickProfile} />
           <main>
+            {profileId === 'creative' && <section className="gutter relative z-10 border-b border-[#c8ae78]/20 bg-ink-2 pb-10 pt-28" aria-label="Connect with Kathy"><p className="mb-3 text-xs uppercase tracking-[0.25em] text-[#e5c69b]">Let’s connect</p><h1 className="font-display text-4xl text-bone sm:text-5xl">A conversation worth starting.</h1><p className="mt-3 max-w-2xl text-mist">Interested in data science, a project collaboration, or a coffee in Melbourne? I’d love to hear what you’re working on.</p><div className="mt-5 flex flex-wrap gap-3"><a className="rounded-md bg-[#ecd8b1] px-5 py-3 font-semibold text-[#211b18]" href={`mailto:${profile.email}`}>Email Kathy ↗</a><a className="rounded-md border border-[#c8ae78]/40 px-5 py-3 text-bone" href={profile.links.linkedin} target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div></section>}
+
             <Hero key={`hero-${profileId}`} onPlay={() => setPlaying(true)} onResume={() => setResumeOpen(true)} profileId={profileId} />
             <ContinueWatching order={order} />
             {order.map((id) => (

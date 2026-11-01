@@ -941,7 +941,7 @@ export const viewerProfiles: {
 }[] = [
   {
     id: 'kathy',
-    name: 'Kathy',
+    name: 'Explore',
     blurb: 'Explore the complete portfolio',
     color: '#7f2944',
     order: ['about', 'journey', 'originals', 'picks', 'skills', 'moments', 'story'],
@@ -950,21 +950,21 @@ export const viewerProfiles: {
     id: 'recruiter',
     name: 'Recruiter',
     blurb: 'Experience, results & skills',
-    color: '#d0b4df',
+    color: '#685142',
     order: ['story', 'moments', 'skills', 'originals', 'about', 'journey', 'picks'],
   },
   {
     id: 'developer',
-    name: 'Engineer',
+    name: 'Technical Peer',
     blurb: 'Projects, architecture & code',
-    color: '#d2ad83',
+    color: '#524b3d',
     order: ['originals', 'skills', 'journey', 'moments', 'about', 'picks', 'story'],
   },
   {
     id: 'creative',
-    name: 'Collaborator',
-    blurb: 'Background, interests & highlights',
-    color: '#e5c69b',
+    name: 'Let’s Connect',
+    blurb: 'Networking, ideas & collaboration',
+    color: '#624846',
     order: ['journey', 'picks', 'originals', 'moments', 'about', 'skills', 'story'],
   },
 ];

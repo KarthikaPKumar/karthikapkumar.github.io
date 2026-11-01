@@ -8,18 +8,22 @@ export function ProfileAvatar({ id, size = 'lg' }: { id: ProfileId; size?: 'sm' 
   const box = size === 'lg' ? 'h-24 w-24 sm:h-32 sm:w-32 md:h-36 md:w-36 rounded-xl' : 'h-8 w-8 rounded-md';
   if (id === 'kathy') {
     return (
-      <span className={`relative block overflow-hidden ${box}`} style={{ background: 'radial-gradient(circle at 50% 30%, #6b223f, #1a0b12)' }}>
+      <span className={`relative block overflow-hidden ${box}`} style={{ background: 'linear-gradient(145deg, #fff5df 0%, #e6cd9b 55%, #b89559 100%)' }}>
         <img src={profile.portrait.src} alt="" className="absolute inset-x-0 bottom-0 mx-auto h-full w-auto max-w-none -translate-x-[3%] object-cover object-top" />
       </span>
     );
   }
-  const glyph = { recruiter: 'R', developer: '</>', creative: '✦' }[id];
+  const iconPaths = {
+    recruiter: 'M8 7V5h8v2M4 8h16v12H4zM4 12c5 3 11 3 16 0M10 13h4',
+    developer: 'M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14',
+    creative: 'M4 4h16v12H9l-5 4V4zM8 8h8M8 12h5',
+  }[id];
   return (
     <span
       className={`relative flex items-center justify-center overflow-hidden font-display text-bone ${box}`}
-      style={{ background: `linear-gradient(145deg, ${p.color}, #1b1016 120%)` }}
+      style={{ background: `radial-gradient(circle at 30% 15%, ${p.color}, #211b18 95%)`, border: '1px solid #c8ae7860', color: '#f0dcb5' }}
     >
-      <span className={size === 'lg' ? 'text-4xl sm:text-5xl' : 'text-sm'}>{glyph}</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden className={size === 'lg' ? 'h-12 w-12 sm:h-14 sm:w-14' : 'h-5 w-5'}><path d={iconPaths}/></svg>
     </span>
   );
 }
@@ -63,9 +67,7 @@ export default function ProfileSelector({ onPick }: { onPick: (id: ProfileId) =>
             <button type="button" onClick={() => onPick(p.id)} data-cursor="play" className="group flex flex-col items-center gap-3 text-center">
               <span className="relative rounded-xl ring-2 ring-transparent transition duration-300 group-hover:scale-105 group-hover:ring-bone group-focus-visible:ring-bone">
                 <ProfileAvatar id={p.id} />
-                {p.id === 'kathy' && (
-                  <span className="absolute -right-2 -top-2 rounded-full bg-crimson px-2 py-0.5 text-[9px] font-bold tracking-[0.18em] text-white">MAIN</span>
-                )}
+
               </span>
               <span className="font-sans text-sm font-medium text-mist transition group-hover:text-bone sm:text-base">{p.name}</span>
               <span className="max-w-[9rem] text-[11px] leading-snug text-smoke">{p.blurb}</span>
@@ -74,7 +76,7 @@ export default function ProfileSelector({ onPick }: { onPick: (id: ProfileId) =>
         ))}
       </motion.ul>
       <p className="relative mt-12 max-w-md text-center text-xs leading-relaxed text-smoke">
-        Choose a perspective to bring the most relevant work into focus.
+        Experience, technical work, or a conversation. Choose where to begin.
       </p>
     </motion.div>
   );
