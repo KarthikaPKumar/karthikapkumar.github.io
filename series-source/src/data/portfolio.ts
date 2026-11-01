@@ -14,11 +14,11 @@ export type IntroSlide = {kicker:string;title:string;lines:string[];chips?:strin
 export type ProfileId = 'kathy'|'recruiter'|'developer'|'creative';
 export type SectionId = 'about'|'journey'|'originals'|'picks'|'skills'|'moments'|'story';
 
-const crimson: Palette = {"from": "#062019", "via": "#18543e", "to": "#06130f", "accent": "#80d6ad"};
-const amber: Palette = {"from": "#102217", "via": "#3f5741", "to": "#09160e", "accent": "#bdcda3"};
-const ocean: Palette = {"from": "#04121f", "via": "#0f4c6e", "to": "#05080d", "accent": "#4cc9ff"};
-const violet: Palette = {"from": "#081b27", "via": "#204759", "to": "#07141b", "accent": "#9bbfca"};
-const jade: Palette = {"from": "#03150f", "via": "#0d5a40", "to": "#050a08", "accent": "#46e3a8"};
+const crimson: Palette = {"from": "#2b0e1b", "via": "#6b223f", "to": "#13090f", "accent": "#e4a4b5"};
+const amber: Palette = {"from": "#291a12", "via": "#684735", "to": "#160e0b", "accent": "#d4b18e"};
+const ocean: Palette = {"from": "#21141c", "via": "#63374b", "to": "#140d11", "accent": "#d7a4b8"};
+const violet: Palette = {"from": "#271522", "via": "#543144", "to": "#140d13", "accent": "#c4a1b5"};
+const jade: Palette = {"from": "#24170f", "via": "#62422f", "to": "#160e0b", "accent": "#c6a083"};
 export const profile = {
   "fullName": "Karthika Pillai Kumar",
   "displayName": "Kathy",
@@ -140,10 +140,10 @@ export const projects: Project[] = [
     "live": "https://karthikapkumar.github.io/voltwise/",
     "limits": "Only four laboratory cells. These results do not establish vehicle-fleet performance, remaining lifetime or battery safety. The public site provides forecasts and metrics; the generative AI assistant runs locally through Ollama.",
     "palette": {
-      "from": "#062019",
-      "via": "#18543e",
-      "to": "#06130f",
-      "accent": "#80d6ad"
+      "from": "#2b0e1b",
+      "via": "#6b223f",
+      "to": "#13090f",
+      "accent": "#e4a4b5"
     },
     "motif": "flow"
   },
@@ -177,10 +177,10 @@ export const projects: Project[] = [
     "live": "https://karthikapkumar.github.io/Nexora-demo/",
     "limits": "This is an illustrative systems demonstration. It is not connected to production pipelines and does not autonomously repair real infrastructure.",
     "palette": {
-      "from": "#102217",
-      "via": "#3f5741",
-      "to": "#09160e",
-      "accent": "#bdcda3"
+      "from": "#291a12",
+      "via": "#684735",
+      "to": "#160e0b",
+      "accent": "#d4b18e"
     },
     "motif": "tenants"
   },
@@ -217,10 +217,10 @@ export const projects: Project[] = [
     "live": "https://karthikapkumar.github.io/Serverless-Sensory-Aware-Router/",
     "limits": "Crowd observations may be stale or incomplete. Noise and light measurements remain unknown. The free demo is static; preserved AWS backend code needs further work before cloud deployment.",
     "palette": {
-      "from": "#04121f",
-      "via": "#0f4c6e",
-      "to": "#05080d",
-      "accent": "#4cc9ff"
+      "from": "#21141c",
+      "via": "#63374b",
+      "to": "#140d11",
+      "accent": "#d7a4b8"
     },
     "motif": "flow"
   },
@@ -255,10 +255,10 @@ export const projects: Project[] = [
     "live": "",
     "limits": "There is no public running demo linked here. No production accuracy or deployment availability is claimed by this portfolio.",
     "palette": {
-      "from": "#081b27",
-      "via": "#204759",
-      "to": "#07141b",
-      "accent": "#9bbfca"
+      "from": "#271522",
+      "via": "#543144",
+      "to": "#140d13",
+      "accent": "#c4a1b5"
     },
     "motif": "shield"
   },
@@ -291,10 +291,10 @@ export const projects: Project[] = [
     "live": "",
     "limits": "No public running demo or validated employee-outcome claims are presented. This is a concept project, not an employment assessment system.",
     "palette": {
-      "from": "#03150f",
-      "via": "#0d5a40",
-      "to": "#050a08",
-      "accent": "#46e3a8"
+      "from": "#24170f",
+      "via": "#62422f",
+      "to": "#160e0b",
+      "accent": "#c6a083"
     },
     "motif": "tenants"
   }
@@ -597,10 +597,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "Computer science",
         "palette": {
-          "from": "#062019",
-          "via": "#18543e",
-          "to": "#06130f",
-          "accent": "#80d6ad"
+          "from": "#2b0e1b",
+          "via": "#6b223f",
+          "to": "#13090f",
+          "accent": "#e4a4b5"
         }
       }
     ]
@@ -621,10 +621,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "2022 – 2025",
         "palette": {
-          "from": "#102217",
-          "via": "#3f5741",
-          "to": "#09160e",
-          "accent": "#bdcda3"
+          "from": "#291a12",
+          "via": "#684735",
+          "to": "#160e0b",
+          "accent": "#d4b18e"
         }
       },
       {
@@ -638,10 +638,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "2022 – 2025",
         "palette": {
-          "from": "#04121f",
-          "via": "#0f4c6e",
-          "to": "#05080d",
-          "accent": "#4cc9ff"
+          "from": "#21141c",
+          "via": "#63374b",
+          "to": "#140d11",
+          "accent": "#d7a4b8"
         }
       }
     ]
@@ -662,10 +662,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "2025 – 2026",
         "palette": {
-          "from": "#04121f",
-          "via": "#0f4c6e",
-          "to": "#05080d",
-          "accent": "#4cc9ff"
+          "from": "#21141c",
+          "via": "#63374b",
+          "to": "#140d11",
+          "accent": "#d7a4b8"
         }
       },
       {
@@ -678,10 +678,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "2025 – 2026",
         "palette": {
-          "from": "#081b27",
-          "via": "#204759",
-          "to": "#07141b",
-          "accent": "#9bbfca"
+          "from": "#271522",
+          "via": "#543144",
+          "to": "#140d13",
+          "accent": "#c4a1b5"
         }
       }
     ]
@@ -703,10 +703,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "Portfolio projects",
         "palette": {
-          "from": "#081b27",
-          "via": "#204759",
-          "to": "#07141b",
-          "accent": "#9bbfca"
+          "from": "#271522",
+          "via": "#543144",
+          "to": "#140d13",
+          "accent": "#c4a1b5"
         }
       },
       {
@@ -719,10 +719,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "Portfolio projects",
         "palette": {
-          "from": "#03150f",
-          "via": "#0d5a40",
-          "to": "#050a08",
-          "accent": "#46e3a8"
+          "from": "#24170f",
+          "via": "#62422f",
+          "to": "#160e0b",
+          "accent": "#c6a083"
         }
       },
       {
@@ -735,10 +735,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "Portfolio projects",
         "palette": {
-          "from": "#062019",
-          "via": "#18543e",
-          "to": "#06130f",
-          "accent": "#80d6ad"
+          "from": "#2b0e1b",
+          "via": "#6b223f",
+          "to": "#13090f",
+          "accent": "#e4a4b5"
         }
       }
     ]
@@ -760,10 +760,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "Current focus",
         "palette": {
-          "from": "#03150f",
-          "via": "#0d5a40",
-          "to": "#050a08",
-          "accent": "#46e3a8"
+          "from": "#24170f",
+          "via": "#62422f",
+          "to": "#160e0b",
+          "accent": "#c6a083"
         }
       }
     ]
@@ -775,10 +775,10 @@ export const topPicks: TopPick[] = [
     "title": "IBM watsonx.data",
     "detail": "Presto and platform tooling",
     "palette": {
-      "from": "#062019",
-      "via": "#18543e",
-      "to": "#06130f",
-      "accent": "#80d6ad"
+      "from": "#2b0e1b",
+      "via": "#6b223f",
+      "to": "#13090f",
+      "accent": "#e4a4b5"
     }
   },
   {
@@ -786,10 +786,10 @@ export const topPicks: TopPick[] = [
     "title": "Voltwise",
     "detail": "NASA lab data · held-out evaluation",
     "palette": {
-      "from": "#102217",
-      "via": "#3f5741",
-      "to": "#09160e",
-      "accent": "#bdcda3"
+      "from": "#291a12",
+      "via": "#684735",
+      "to": "#160e0b",
+      "accent": "#d4b18e"
     }
   },
   {
@@ -797,10 +797,10 @@ export const topPicks: TopPick[] = [
     "title": "dbt + DuckDB",
     "detail": "13 data checks",
     "palette": {
-      "from": "#04121f",
-      "via": "#0f4c6e",
-      "to": "#05080d",
-      "accent": "#4cc9ff"
+      "from": "#21141c",
+      "via": "#63374b",
+      "to": "#140d11",
+      "accent": "#d7a4b8"
     }
   },
   {
@@ -808,10 +808,10 @@ export const topPicks: TopPick[] = [
     "title": "Monash",
     "detail": "Master of Data Science",
     "palette": {
-      "from": "#081b27",
-      "via": "#204759",
-      "to": "#07141b",
-      "accent": "#9bbfca"
+      "from": "#271522",
+      "via": "#543144",
+      "to": "#140d13",
+      "accent": "#c4a1b5"
     }
   },
   {
@@ -819,10 +819,10 @@ export const topPicks: TopPick[] = [
     "title": "Nexora",
     "detail": "DataMedic · synthetic scenarios",
     "palette": {
-      "from": "#03150f",
-      "via": "#0d5a40",
-      "to": "#050a08",
-      "accent": "#46e3a8"
+      "from": "#24170f",
+      "via": "#62422f",
+      "to": "#160e0b",
+      "accent": "#c6a083"
     }
   },
   {
@@ -830,10 +830,10 @@ export const topPicks: TopPick[] = [
     "title": "Melbourne Routes",
     "detail": "Street graphs and timestamped snapshots",
     "palette": {
-      "from": "#062019",
-      "via": "#18543e",
-      "to": "#06130f",
-      "accent": "#80d6ad"
+      "from": "#2b0e1b",
+      "via": "#6b223f",
+      "to": "#13090f",
+      "accent": "#e4a4b5"
     }
   },
   {
@@ -841,10 +841,10 @@ export const topPicks: TopPick[] = [
     "title": "FastAPI",
     "detail": "Portfolio API architecture",
     "palette": {
-      "from": "#102217",
-      "via": "#3f5741",
-      "to": "#09160e",
-      "accent": "#bdcda3"
+      "from": "#291a12",
+      "via": "#684735",
+      "to": "#160e0b",
+      "accent": "#d4b18e"
     }
   },
   {
@@ -852,10 +852,10 @@ export const topPicks: TopPick[] = [
     "title": "Ollama",
     "detail": "Optional local agent in Voltwise",
     "palette": {
-      "from": "#04121f",
-      "via": "#0f4c6e",
-      "to": "#05080d",
-      "accent": "#4cc9ff"
+      "from": "#21141c",
+      "via": "#63374b",
+      "to": "#140d11",
+      "accent": "#d7a4b8"
     }
   },
   {
@@ -863,10 +863,10 @@ export const topPicks: TopPick[] = [
     "title": "Teaching",
     "detail": "Junior Engineers",
     "palette": {
-      "from": "#081b27",
-      "via": "#204759",
-      "to": "#07141b",
-      "accent": "#9bbfca"
+      "from": "#271522",
+      "via": "#543144",
+      "to": "#140d13",
+      "accent": "#c4a1b5"
     }
   },
   {
@@ -874,10 +874,10 @@ export const topPicks: TopPick[] = [
     "title": "Data · Models · Systems",
     "detail": "Three connected disciplines",
     "palette": {
-      "from": "#03150f",
-      "via": "#0d5a40",
-      "to": "#050a08",
-      "accent": "#46e3a8"
+      "from": "#24170f",
+      "via": "#62422f",
+      "to": "#160e0b",
+      "accent": "#c6a083"
     }
   }
 ];
@@ -943,28 +943,28 @@ export const viewerProfiles: {
     id: 'kathy',
     name: 'Kathy',
     blurb: 'Explore the complete portfolio',
-    color: '#237a58',
+    color: '#7f2944',
     order: ['about', 'journey', 'originals', 'picks', 'skills', 'moments', 'story'],
   },
   {
     id: 'recruiter',
     name: 'Recruiter',
     blurb: 'Experience, results & skills',
-    color: '#4cc9ff',
+    color: '#d7a4b8',
     order: ['story', 'moments', 'skills', 'originals', 'about', 'journey', 'picks'],
   },
   {
     id: 'developer',
     name: 'Engineer',
     blurb: 'Projects, architecture & code',
-    color: '#46e3a8',
+    color: '#c6a083',
     order: ['originals', 'skills', 'journey', 'moments', 'about', 'picks', 'story'],
   },
   {
     id: 'creative',
     name: 'Collaborator',
     blurb: 'Background, interests & highlights',
-    color: '#bdcda3',
+    color: '#d4b18e',
     order: ['journey', 'picks', 'originals', 'moments', 'about', 'skills', 'story'],
   },
 ];

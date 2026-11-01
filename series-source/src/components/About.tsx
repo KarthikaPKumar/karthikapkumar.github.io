@@ -23,7 +23,7 @@ export default function About() {
         >
         <Tilt max={5} className="rounded-2xl">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl ring-1 ring-white/10">
-            <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_30%,#174934,#071a13_60%,#061310)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_30%,#5a1d34,#1b0c13_60%,#100a0d)]" />
             <div className="absolute inset-0 opacity-50 [background-image:repeating-linear-gradient(90deg,rgba(255,255,255,0.03)_0px,rgba(255,255,255,0.03)_1px,transparent_1px,transparent_28px)]" />
             <img
               src={profile.portrait.src}
@@ -55,7 +55,7 @@ export default function About() {
           >
             “{profile.intro}”
           </motion.p>
-          <p className="mt-4 text-sm text-mist">— {profile.fullName}</p>
+          <p className="mt-4 text-sm text-mist">· {profile.fullName}</p>
 
           <motion.dl
             className="mt-10 grid gap-px overflow-hidden rounded-xl bg-white/10 sm:grid-cols-2"

@@ -77,7 +77,7 @@ function PinnedOriginals({ onOpen }: { onOpen: (p: Project) => void }) {
   return (
     <div ref={wrap} style={{ height: `calc(100vh + ${dist}px)` }} className="relative">
       <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden">
-        <div aria-hidden className="absolute inset-0 bg-[radial-gradient(50%_60%_at_70%_50%,rgba(35,122,88,0.10),transparent_70%)]" />
+        <div aria-hidden className="absolute inset-0 bg-[radial-gradient(50%_60%_at_70%_50%,rgba(127,41,68,0.10),transparent_70%)]" />
         <motion.div ref={track} style={{ x }} className="gutter relative flex items-center gap-8 pr-[12vw]" data-cursor="drag">
           <Intro />
           {projects.map((p, i) => (

@@ -23,7 +23,7 @@ export default function TopPicks() {
             >
               <span
                 aria-hidden
-                className="text-outline -mr-6 select-none font-display leading-[0.78] transition duration-500 group-hover:[-webkit-text-stroke-color:rgba(128,214,173,0.85)] sm:-mr-8"
+                className="text-outline -mr-6 select-none font-display leading-[0.78] transition duration-500 group-hover:[-webkit-text-stroke-color:rgba(228,164,181,0.85)] sm:-mr-8"
                 style={{ fontSize: i === 9 ? 'clamp(9rem, 22vw, 15rem)' : 'clamp(11rem, 26vw, 19rem)', letterSpacing: i === 9 ? '-0.06em' : 0 }}
               >
                 {i + 1}
