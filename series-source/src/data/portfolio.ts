@@ -15,10 +15,10 @@ export type ProfileId = 'kathy'|'recruiter'|'developer'|'creative';
 export type SectionId = 'about'|'journey'|'originals'|'picks'|'skills'|'moments'|'story';
 
 const crimson: Palette = {"from": "#2b0e1b", "via": "#6b223f", "to": "#13090f", "accent": "#e4a4b5"};
-const amber: Palette = {"from": "#291a12", "via": "#684735", "to": "#160e0b", "accent": "#d4b18e"};
-const ocean: Palette = {"from": "#21141c", "via": "#63374b", "to": "#140d11", "accent": "#d7a4b8"};
-const violet: Palette = {"from": "#271522", "via": "#543144", "to": "#140d13", "accent": "#c4a1b5"};
-const jade: Palette = {"from": "#24170f", "via": "#62422f", "to": "#160e0b", "accent": "#c6a083"};
+const amber: Palette = {"from": "#291a12", "via": "#83543b", "to": "#160e0b", "accent": "#e5c69b"};
+const ocean: Palette = {"from": "#21141c", "via": "#5c3d60", "to": "#140d11", "accent": "#d0b4df"};
+const violet: Palette = {"from": "#271522", "via": "#49334f", "to": "#140d13", "accent": "#bfa7ce"};
+const jade: Palette = {"from": "#24170f", "via": "#66503b", "to": "#160e0b", "accent": "#d2ad83"};
 export const profile = {
   "fullName": "Karthika Pillai Kumar",
   "displayName": "Kathy",
@@ -40,7 +40,7 @@ export const profile = {
   },
   "resumePdf": "",
   "portrait": {
-    "src": "/kathy/revamp/assets/kathy-cutout.png",
+    "src": "/kathy/revamp/assets/kathy-professional.png",
     "srcSet": "",
     "alt": "Portrait of Kathy"
   },
@@ -178,9 +178,9 @@ export const projects: Project[] = [
     "limits": "This is an illustrative systems demonstration. It is not connected to production pipelines and does not autonomously repair real infrastructure.",
     "palette": {
       "from": "#291a12",
-      "via": "#684735",
+      "via": "#83543b",
       "to": "#160e0b",
-      "accent": "#d4b18e"
+      "accent": "#e5c69b"
     },
     "motif": "tenants"
   },
@@ -218,9 +218,9 @@ export const projects: Project[] = [
     "limits": "Crowd observations may be stale or incomplete. Noise and light measurements remain unknown. The free demo is static; preserved AWS backend code needs further work before cloud deployment.",
     "palette": {
       "from": "#21141c",
-      "via": "#63374b",
+      "via": "#5c3d60",
       "to": "#140d11",
-      "accent": "#d7a4b8"
+      "accent": "#d0b4df"
     },
     "motif": "flow"
   },
@@ -256,9 +256,9 @@ export const projects: Project[] = [
     "limits": "There is no public running demo linked here. No production accuracy or deployment availability is claimed by this portfolio.",
     "palette": {
       "from": "#271522",
-      "via": "#543144",
+      "via": "#49334f",
       "to": "#140d13",
-      "accent": "#c4a1b5"
+      "accent": "#bfa7ce"
     },
     "motif": "shield"
   },
@@ -292,9 +292,9 @@ export const projects: Project[] = [
     "limits": "No public running demo or validated employee-outcome claims are presented. This is a concept project, not an employment assessment system.",
     "palette": {
       "from": "#24170f",
-      "via": "#62422f",
+      "via": "#66503b",
       "to": "#160e0b",
-      "accent": "#c6a083"
+      "accent": "#d2ad83"
     },
     "motif": "tenants"
   }
@@ -622,9 +622,9 @@ export const seasons: Season[] = [
         "runtime": "2022 – 2025",
         "palette": {
           "from": "#291a12",
-          "via": "#684735",
+          "via": "#83543b",
           "to": "#160e0b",
-          "accent": "#d4b18e"
+          "accent": "#e5c69b"
         }
       },
       {
@@ -639,9 +639,9 @@ export const seasons: Season[] = [
         "runtime": "2022 – 2025",
         "palette": {
           "from": "#21141c",
-          "via": "#63374b",
+          "via": "#5c3d60",
           "to": "#140d11",
-          "accent": "#d7a4b8"
+          "accent": "#d0b4df"
         }
       }
     ]
@@ -663,9 +663,9 @@ export const seasons: Season[] = [
         "runtime": "2025 – 2026",
         "palette": {
           "from": "#21141c",
-          "via": "#63374b",
+          "via": "#5c3d60",
           "to": "#140d11",
-          "accent": "#d7a4b8"
+          "accent": "#d0b4df"
         }
       },
       {
@@ -679,9 +679,9 @@ export const seasons: Season[] = [
         "runtime": "2025 – 2026",
         "palette": {
           "from": "#271522",
-          "via": "#543144",
+          "via": "#49334f",
           "to": "#140d13",
-          "accent": "#c4a1b5"
+          "accent": "#bfa7ce"
         }
       }
     ]
@@ -704,9 +704,9 @@ export const seasons: Season[] = [
         "runtime": "Portfolio projects",
         "palette": {
           "from": "#271522",
-          "via": "#543144",
+          "via": "#49334f",
           "to": "#140d13",
-          "accent": "#c4a1b5"
+          "accent": "#bfa7ce"
         }
       },
       {
@@ -720,9 +720,9 @@ export const seasons: Season[] = [
         "runtime": "Portfolio projects",
         "palette": {
           "from": "#24170f",
-          "via": "#62422f",
+          "via": "#66503b",
           "to": "#160e0b",
-          "accent": "#c6a083"
+          "accent": "#d2ad83"
         }
       },
       {
@@ -761,9 +761,9 @@ export const seasons: Season[] = [
         "runtime": "Current focus",
         "palette": {
           "from": "#24170f",
-          "via": "#62422f",
+          "via": "#66503b",
           "to": "#160e0b",
-          "accent": "#c6a083"
+          "accent": "#d2ad83"
         }
       }
     ]
@@ -787,9 +787,9 @@ export const topPicks: TopPick[] = [
     "detail": "NASA lab data · held-out evaluation",
     "palette": {
       "from": "#291a12",
-      "via": "#684735",
+      "via": "#83543b",
       "to": "#160e0b",
-      "accent": "#d4b18e"
+      "accent": "#e5c69b"
     }
   },
   {
@@ -798,9 +798,9 @@ export const topPicks: TopPick[] = [
     "detail": "13 data checks",
     "palette": {
       "from": "#21141c",
-      "via": "#63374b",
+      "via": "#5c3d60",
       "to": "#140d11",
-      "accent": "#d7a4b8"
+      "accent": "#d0b4df"
     }
   },
   {
@@ -809,9 +809,9 @@ export const topPicks: TopPick[] = [
     "detail": "Master of Data Science",
     "palette": {
       "from": "#271522",
-      "via": "#543144",
+      "via": "#49334f",
       "to": "#140d13",
-      "accent": "#c4a1b5"
+      "accent": "#bfa7ce"
     }
   },
   {
@@ -820,9 +820,9 @@ export const topPicks: TopPick[] = [
     "detail": "DataMedic · synthetic scenarios",
     "palette": {
       "from": "#24170f",
-      "via": "#62422f",
+      "via": "#66503b",
       "to": "#160e0b",
-      "accent": "#c6a083"
+      "accent": "#d2ad83"
     }
   },
   {
@@ -842,9 +842,9 @@ export const topPicks: TopPick[] = [
     "detail": "Portfolio API architecture",
     "palette": {
       "from": "#291a12",
-      "via": "#684735",
+      "via": "#83543b",
       "to": "#160e0b",
-      "accent": "#d4b18e"
+      "accent": "#e5c69b"
     }
   },
   {
@@ -853,9 +853,9 @@ export const topPicks: TopPick[] = [
     "detail": "Optional local agent in Voltwise",
     "palette": {
       "from": "#21141c",
-      "via": "#63374b",
+      "via": "#5c3d60",
       "to": "#140d11",
-      "accent": "#d7a4b8"
+      "accent": "#d0b4df"
     }
   },
   {
@@ -864,9 +864,9 @@ export const topPicks: TopPick[] = [
     "detail": "Junior Engineers",
     "palette": {
       "from": "#271522",
-      "via": "#543144",
+      "via": "#49334f",
       "to": "#140d13",
-      "accent": "#c4a1b5"
+      "accent": "#bfa7ce"
     }
   },
   {
@@ -875,9 +875,9 @@ export const topPicks: TopPick[] = [
     "detail": "Three connected disciplines",
     "palette": {
       "from": "#24170f",
-      "via": "#62422f",
+      "via": "#66503b",
       "to": "#160e0b",
-      "accent": "#c6a083"
+      "accent": "#d2ad83"
     }
   }
 ];
@@ -950,21 +950,21 @@ export const viewerProfiles: {
     id: 'recruiter',
     name: 'Recruiter',
     blurb: 'Experience, results & skills',
-    color: '#d7a4b8',
+    color: '#d0b4df',
     order: ['story', 'moments', 'skills', 'originals', 'about', 'journey', 'picks'],
   },
   {
     id: 'developer',
     name: 'Engineer',
     blurb: 'Projects, architecture & code',
-    color: '#c6a083',
+    color: '#d2ad83',
     order: ['originals', 'skills', 'journey', 'moments', 'about', 'picks', 'story'],
   },
   {
     id: 'creative',
     name: 'Collaborator',
     blurb: 'Background, interests & highlights',
-    color: '#d4b18e',
+    color: '#e5c69b',
     order: ['journey', 'picks', 'originals', 'moments', 'about', 'skills', 'story'],
   },
 ];
