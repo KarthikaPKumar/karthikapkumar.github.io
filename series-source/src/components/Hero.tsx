@@ -129,6 +129,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
           {profile.intro}
         </motion.p>
 
+        <motion.p variants={item} className="mt-4 text-sm leading-6 text-[#ead8b8]">{profile.workRights}<br/>{profile.availability}</motion.p>
         <motion.div variants={item} className="mt-8 flex flex-wrap items-center gap-3"><a href={profile.resumePdf} download className="rounded-md bg-[#ead8b8] px-6 py-3 font-semibold text-ink">Download résumé PDF ↓</a>
           <Magnetic>
             <button

@@ -20,11 +20,11 @@ const ocean: Palette = {"from": "#21141c", "via": "#5c3d60", "to": "#140d11", "a
 const violet: Palette = {"from": "#271522", "via": "#49334f", "to": "#140d13", "accent": "#bfa7ce"};
 const jade: Palette = {"from": "#24170f", "via": "#66503b", "to": "#160e0b", "accent": "#d2ad83"};
 export const profile = {
-  "fullName": "Karthika Pillai Kumar",
-  "displayName": "Karthika Pillai Kumar",
+  "fullName": "Kathy",
+  "displayName": "Kathy",
   "firstName": "KATHY",
   "seriesTag": "DATA · MODELS · IMPACT",
-  "originalLabel": "KARTHIKA PILLAI KUMAR",
+  "originalLabel": "KATHY",
   "role": "Data Scientist & Engineer",
   "tagline": [
     "Data Science",
@@ -33,6 +33,8 @@ export const profile = {
   ],
   "intro": "Master of Data Science student at Monash (2025–2026). Previously IBM watsonx.data (Presto). I build predictive models, reliable data pipelines and applied AI tools.",
   "location": "Melbourne, Australia",
+  "workRights": "Temporary Graduate Visa (Subclass 485)",
+  "availability": "Available for full-time work from November 2026",
   "email": "karthikapillai@gmail.com",
   "links": {
     "linkedin": "https://www.linkedin.com/in/karthikapillaikumar/",
@@ -886,7 +888,7 @@ export const introSlides: IntroSlide[] = [
     "kicker": "The foundation",
     "title": "Engineering meets data",
     "lines": [
-      "Karthika Pillai Kumar · Kathy",
+      "Kathy",
       "Data Science · ML Engineering · Analytics Engineering"
     ]
   },
