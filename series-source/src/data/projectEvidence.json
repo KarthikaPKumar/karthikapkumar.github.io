@@ -15,9 +15,9 @@
     ],
     "summary": "A live platform for exploring neighbourhood health, development and environmental data across Greater Melbourne. Families and practitioners can explore interactive maps, compare areas, use Family Fit matching and investigate future scenarios. Built as a team project, with an exploratory school-entry forecast.",
     "result": "346 reporting areas · 8 family priorities · 6.43 percentage-point forecast MAE",
-    "image": "/kathy/assets/vkinder-evidence.svg",
-    "alt": "VKinder evidence summary: 346 Melbourne reporting areas, eight family priorities, and ridge forecast MAE of 6.43 percentage points compared with persistence at 7.56",
-    "caption": "Model-card results: 2021–2024 chronological test, 342 areas. Lower forecast error is better; this is area-level research, not an individual child prediction.",
+    "image": "/kathy/assets/vkinder-live.png",
+    "alt": "Actual VKinder homepage with its neighbourhood landscape, navigation and healthier childhoods introduction",
+    "caption": "VKinder live website, captured 2 November 2026. Background footage credits appear in the original page.",
     "steps": [
       "Public development, environment and service data",
       "Python validation and geographic harmonisation",
