@@ -40,7 +40,7 @@ export const profile = {
     "linkedin": "https://www.linkedin.com/in/karthikapillaikumar/",
     "github": "https://github.com/KarthikaPKumar"
   },
-  "resumePdf": "/kathy/assets/karthika-pillai-kumar-resume.pdf",
+  "resumePdf": "/kathy/assets/Kathy.pdf",
   "portrait": {
     "src": "/kathy/assets/headshot.jpg",
     "srcSet": "",
