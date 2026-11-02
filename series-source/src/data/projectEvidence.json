@@ -1,7 +1,7 @@
 {
   "vkinder": {
     "title": "VKinder",
-    "status": "Core team project · Applied data science",
+    "status": "Live web application · Core team project",
     "tools": [
       "Python",
       "SQL",
@@ -13,7 +13,7 @@
       "Mapbox",
       "AWS Lambda"
     ],
-    "summary": "Help families and practitioners explore how place shapes childhood across Greater Melbourne. A team-built platform connects neighbourhood evidence, family-priority matching and an exploratory school-entry forecast.",
+    "summary": "A live platform for exploring neighbourhood health, development and environmental data across Greater Melbourne. Families and practitioners can explore interactive maps, compare areas, use Family Fit matching and investigate future scenarios. Built as a team project, with an exploratory school-entry forecast.",
     "result": "346 reporting areas · 8 family priorities · 6.43 percentage-point forecast MAE",
     "image": "/kathy/assets/vkinder-evidence.svg",
     "alt": "VKinder evidence summary: 346 Melbourne reporting areas, eight family priorities, and ridge forecast MAE of 6.43 percentage points compared with persistence at 7.56",
