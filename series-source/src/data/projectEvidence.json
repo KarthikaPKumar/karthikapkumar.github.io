@@ -32,7 +32,10 @@
     "cost": "The documented deployment uses Vercel for the frontend and AWS Lambda, API Gateway and RDS PostgreSQL for the API and data. No hosting-cost or production-latency benchmark is claimed.",
     "security": "Area-level indicators do not assess individual children. Missing measures remain missing; data gates reject invalid refreshes and restore prior outputs. The documented API uses a read-only database role.",
     "source": "",
-    "live": "https://www.vkinder.me/"
+    "live": "https://www.vkinder.me/",
+    "reason": "When a friend and I were looking at places to move, we tried to find useful information about neighbourhood health patterns. We couldn't find something that helped us compare areas clearly. That gap became the starting point for VKinder. The project now focuses on area-level child development, environment and services; it doesn't assess personal health risks.",
+    "whatWentWrong": "The model card records a shortlist-stability bug: an earlier version re-ranked only initially eligible areas, overstating stability. The corrected version reruns the complete search. The forecast also missed a Melbourne-wide shift; its nominal 80% intervals covered only 69.9% of test areas.",
+    "nextStep": "I'd prioritise past-only socioeconomic inputs and more chronological evaluation before presenting the outlook more confidently. A lower average error doesn't fix poorly calibrated uncertainty."
   },
   "voltwise": {
     "title": "Voltwise",
@@ -65,7 +68,10 @@
     "cost": "The public dashboard is static. Running the local model and agent uses your own computer; no hosted LLM service is required.",
     "security": "The local agent exposes bounded read-only metric tools, not arbitrary SQL, shell access or data writes.",
     "source": "https://github.com/KarthikaPKumar/voltwise",
-    "live": "https://karthikapkumar.github.io/voltwise/"
+    "live": "https://karthikapkumar.github.io/voltwise/",
+    "reason": "Batteries gave this project a practical question: can we forecast capacity loss early enough to make the next measurement less of a surprise? The appeal is that a prediction can be checked against real measurements and a simple baseline. This is a small laboratory study, not a vehicle-ready model.",
+    "whatWentWrong": "The main risk is an easy evaluation. Neighbouring windows from the same cell share history, so a random row split can make the model look better than it is. This pipeline holds out whole batteries. That still leaves only four laboratory cells, not evidence of performance on vehicles.",
+    "nextStep": "I'd test on more cells and different operating conditions before adding model complexity. I'd also check how error changes as the forecast horizon grows, rather than reporting one average."
   },
   "senseway": {
     "title": "Sensory-Aware Route Planner",
@@ -96,7 +102,10 @@
     "cost": "GitHub Pages serves static JSON and JavaScript. There is no live database or paid routing API in this demo.",
     "security": "Address search and route calculation run in the browser. Journeys are not submitted to a remote routing service.",
     "source": "https://github.com/KarthikaPKumar/Serverless-Sensory-Aware-Router",
-    "live": "https://karthikapkumar.github.io/Serverless-Sensory-Aware-Router/"
+    "live": "https://karthikapkumar.github.io/Serverless-Sensory-Aware-Router/",
+    "reason": "I'm more comfortable with a bit of chaos than with silence. That made me think about someone who feels the opposite: what if noise makes a walk difficult? This was a way to look beyond my own preferences. The current prototype uses pedestrian activity where the data is reliable; it can't yet measure how noisy or comfortable a route will feel.",
+    "whatWentWrong": "The available data cannot support live noise or light claims. Pedestrian counters can be stale or incomplete. When those checks fail, the app disables activity-based routing rather than pretending it has a quieter route.",
+    "nextStep": "I'd evaluate route choices with people who have sensory access needs, then add measured noise and lighting only where reliable observations exist. Crowd counts alone aren't a sensory-accessibility score."
   },
   "nexora": {
     "title": "Nexora (DataMedic)",
@@ -123,7 +132,10 @@
     "cost": "Static demo with no database or running backend.",
     "security": "No company data or credentials are included. Browser selections are temporary.",
     "source": "https://github.com/KarthikaPKumar/Nexora-demo",
-    "live": "https://karthikapkumar.github.io/Nexora-demo/"
+    "live": "https://karthikapkumar.github.io/Nexora-demo/",
+    "reason": "Pipeline failures are easier to discuss when you can step through an example. Nexora, previously DataMedic, makes that investigation visible with synthetic scenarios.",
+    "whatWentWrong": "Recorded recovery playback cannot show that an engine will recover from an unseen incident. This public demo has no operational backend or measured production recovery time.",
+    "nextStep": "I'd connect one real, reproducible test pipeline and measure diagnosis accuracy and failed recoveries before expanding the demo."
   },
   "wildlife": {
     "title": "Wildlife Detection API",
@@ -156,7 +168,10 @@
     "cost": "OCI compute and Kubernetes hosting would require provisioning and a separate cost estimate. No running cloud cost is claimed.",
     "security": "Authentication, rate limiting, scanning and production observability are listed as future work in the repository.",
     "source": "https://github.com/KarthikaPKumar/Cloud-Native-Wildlife-Detection-Model",
-    "live": ""
+    "live": "",
+    "reason": "An image model needs an API, validation and a deployment path before another application can use it. This repository explores that surrounding engineering.",
+    "whatWentWrong": "The architecture is documented, but there is no published wildlife accuracy benchmark or reproducible latency result. Deployment configuration alone does not establish model quality.",
+    "nextStep": "I'd start with a labelled wildlife evaluation set and publish precision, recall and latency before spending more time on infrastructure."
   },
   "speech": {
     "title": "Speech Analysis Tool",
@@ -178,6 +193,9 @@
     "cost": "No deployed service; costs are not established.",
     "security": "Any future implementation would require consent, retention limits and protection for submitted speech. It is not an employment-assessment system.",
     "source": "https://github.com/KarthikaPKumar/SAP",
-    "live": ""
+    "live": "",
+    "reason": "The proposed tool explores whether speech feedback could be understandable and useful to a learner. It remains a concept.",
+    "whatWentWrong": "There is no validated implementation or evaluation dataset, so there is no working outcome to report yet.",
+    "nextStep": "I'd narrow the first version to one feedback task and evaluate it with consenting users before adding more features."
   }
 }

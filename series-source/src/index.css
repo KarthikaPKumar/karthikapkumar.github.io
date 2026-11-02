@@ -159,3 +159,9 @@ a:focus-visible {
 .btn-primary,.btn-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:12px 20px;border-radius:6px;font-size:15px;font-weight:600;text-decoration:none;gap:8px;line-height:1.4}.btn-primary{background:#e5c69b;color:#211b18;border:1px solid #e5c69b}.btn-secondary{background:transparent;color:#f5ede4;border:1px solid #7c6a70}.btn-primary:hover{background:#f0dab8}.btn-secondary:hover{border-color:#e5c69b}:where(a,button,summary):focus-visible{outline:2px solid #e5c69b;outline-offset:4px}
 
 .skip-link{position:fixed;left:16px;top:12px;z-index:300;background:#e5c69b;color:#211b18;padding:12px 18px;transform:translateY(-200%)}.skip-link:focus{transform:translateY(0)}
+
+/* Quiet reading layout: gold is the sole interface accent. Charts retain data colours. */
+.personal-portfolio .font-display{font-family:var(--font-sans);font-size:clamp(1.75rem,3vw,2.5rem);font-weight:600;letter-spacing:-.02em}
+.personal-portfolio *, .personal-portfolio *::before, .personal-portfolio *::after{animation:none!important;transition:none!important}
+.personal-portfolio section[id]{scroll-margin-top:24px}
+.personal-portfolio .btn-primary{background:#e5c69b;color:#211b18}

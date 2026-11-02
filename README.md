@@ -65,3 +65,5 @@ VKinder is featured as the core team project. Its evidence summary and case stud
 Voltwise uses a navy/ice-blue SVG regenerated from the same 168 NASA B0005 measurements. VKinder uses a sage evidence graphic, while the route planner retains its actual map screenshot.
 
 Canonical share URL: https://karthikapkumar.github.io/kathy/. Existing `/revamp/` links continue to work. The build copies its entry page to the root; assets retain their absolute paths.
+
+The November 2026 personal rewrite removes the profile chooser, opening sequence, ghost numerals, particles, parallax and decorative animation from the active application. It uses the original outdoor photograph at `assets/headshot.jpg`. `/notes/` contains three evidence-based technical notes and a real SQL excerpt. Project motivations use Kathy's supplied relocation and sensory-preference stories; no invented IBM debugging anecdote is published. The existing résumé PDF remains pending replacement with the user's attachment.

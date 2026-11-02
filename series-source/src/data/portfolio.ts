@@ -31,7 +31,7 @@ export const profile = {
     "ML Engineering",
     "Analytics Engineering"
   ],
-  "intro": "Master of Data Science graduate, Monash University (completed 2026). Previously IBM watsonx.data (Presto). I build predictive models, reliable data pipelines and applied AI tools.",
+  "intro": "Master of Data Science graduate, Monash University (completed 2026). Previously IBM watsonx.data (Presto). At IBM, I worked on audit logging, caching improvements and Python tools for quality assurance.",
   "location": "Melbourne, Australia",
   "workRights": "Temporary Graduate Visa (Subclass 485)",
   "availability": "Available now for full-time work",
@@ -42,7 +42,7 @@ export const profile = {
   },
   "resumePdf": "/kathy/assets/karthika-pillai-kumar-resume.pdf",
   "portrait": {
-    "src": "/kathy/revamp/assets/kathy-professional.png",
+    "src": "/kathy/assets/headshot.jpg",
     "srcSet": "",
     "alt": "Portrait of Kathy"
   },
@@ -929,7 +929,7 @@ export const introSlides: IntroSlide[] = [
   },
   {
     "kicker": "The toolkit",
-    "title": "From data to decisions",
+    "title": "Let’s talk about a data role",
     "lines": [
       "Python · SQL · scikit-learn · dbt · DuckDB",
       "FastAPI · Ollama · GitHub Actions"
