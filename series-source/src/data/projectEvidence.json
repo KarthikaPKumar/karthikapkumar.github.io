@@ -1,4 +1,39 @@
 {
+  "vkinder": {
+    "title": "VKinder",
+    "status": "Core team project · Applied data science",
+    "tools": [
+      "Python",
+      "SQL",
+      "scikit-learn",
+      "FastAPI",
+      "PostgreSQL",
+      "React",
+      "TypeScript",
+      "Mapbox",
+      "AWS Lambda"
+    ],
+    "summary": "Help families and practitioners explore how place shapes childhood across Greater Melbourne. A team-built platform connects neighbourhood evidence, family-priority matching and an exploratory school-entry forecast.",
+    "result": "346 reporting areas · 8 family priorities · 6.43 percentage-point forecast MAE",
+    "image": "/kathy/assets/vkinder-evidence.svg",
+    "alt": "VKinder evidence summary: 346 Melbourne reporting areas, eight family priorities, and ridge forecast MAE of 6.43 percentage points compared with persistence at 7.56",
+    "caption": "Model-card results: 2021–2024 chronological test, 342 areas. Lower forecast error is better; this is area-level research, not an individual child prediction.",
+    "steps": [
+      "Public development, environment and service data",
+      "Python validation and geographic harmonisation",
+      "Family Fit scoring + uncertainty analysis",
+      "Ridge school-entry forecast",
+      "FastAPI + PostgreSQL",
+      "React maps and area comparisons"
+    ],
+    "scope": "Core team project, also named KinderPrint in the repository. Includes data pipelines, an area-matching engine and a web application. The source repository is private.",
+    "failure": "One test transition shares a Melbourne-wide shift. Ridge over-predicts by 3.48 percentage points; nominal 80% intervals cover only 69.9%. Historical origins reuse IRSD 2021, and 2027 interval coverage is not demonstrated. Findings are exploratory, not causal or diagnostic.",
+    "scale": "The model card reports 346 areas, with all eight needs scored for 330. Chronological evaluation reports ridge MAE of 6.43 percentage points versus 7.56 for persistence on 342 test areas, a 14.9% reduction. These are repository-reported results, not a new independent rerun.",
+    "cost": "The documented deployment uses Vercel for the frontend and AWS Lambda, API Gateway and RDS PostgreSQL for the API and data. No hosting-cost or production-latency benchmark is claimed.",
+    "security": "Area-level indicators do not assess individual children. Missing measures remain missing; data gates reject invalid refreshes and restore prior outputs. The documented API uses a read-only database role.",
+    "source": "",
+    "live": "https://www.vkinder.me/"
+  },
   "voltwise": {
     "title": "Voltwise",
     "status": "Measured prototype",
@@ -12,8 +47,8 @@
       "Ollama"
     ],
     "summary": "Forecast battery capacity ten discharge cycles ahead from NASA laboratory measurements. Compare held-out predictions against a persistence baseline and inspect the tested analytics pipeline.",
-    "result": "0.024 Ah MAE \u00b7 560 held-out windows \u00b7 44.7% lower error than persistence",
-    "image": "/kathy/assets/voltwise-capacity.svg",
+    "result": "0.024 Ah MAE · 560 held-out windows · 44.7% lower error than persistence",
+    "image": "/kathy/assets/voltwise-capacity-dark.svg",
     "alt": "Recorded capacity degradation of NASA laboratory battery B0005 over 168 discharge cycles",
     "caption": "NASA laboratory cell B0005: 168 recorded discharge cycles. Capacity is measured in ampere-hours (Ah).",
     "steps": [
@@ -43,10 +78,10 @@
       "GitHub Actions"
     ],
     "summary": "Calculate walking routes on a real central-Melbourne street graph. Pedestrian-counter snapshots add context only when freshness and reporting-coverage checks pass.",
-    "result": "16,386 graph nodes \u00b7 18,772 walking segments \u00b7 13,858 addresses",
+    "result": "16,386 graph nodes · 18,772 walking segments · 13,858 addresses",
     "image": "/kathy/assets/senseway-output.png",
     "alt": "Screenshot of the live Melbourne route planner with mapped walking streets and a calculated path",
-    "caption": "Actual demo, 1 November 2026. Map: \u00a9 OpenStreetMap contributors (ODbL). Council data: City of Melbourne (CC BY).",
+    "caption": "Actual demo, 1 November 2026. Map: © OpenStreetMap contributors (ODbL). Council data: City of Melbourne (CC BY).",
     "steps": [
       "OSM + Melbourne open data",
       "Python snapshot extraction",

@@ -58,3 +58,7 @@ The UI uses native scrolling, visible focus states, labelled controls, reduced-m
 Template provenance is recorded in [`series-source/ATTRIBUTION.md`](series-source/ATTRIBUTION.md). Unused earlier root design scripts and styles have been removed; Git history retains prior versions.
 
 The chart renderer `scripts/build_voltwise_chart.py` uses ReportLab and the adjacent Voltwise checkout’s `data/cycles.csv`. It asserts 168 B0005 measurements and includes labelled capacity and cycle axes.
+
+VKinder is featured as the core team project. Its evidence summary and case study are based on the KinderPrint README and Family Fit model card (S2.1/F3), reviewed 2 November 2026. Reported evaluation results are explicitly distinguished from an independent rerun. The private source repository is not linked as public code; the public app is https://www.vkinder.me/. No backend infrastructure or repository permissions were changed.
+
+Voltwise uses a navy/ice-blue SVG regenerated from the same 168 NASA B0005 measurements. VKinder uses a sage evidence graphic, while the route planner retains its actual map screenshot.

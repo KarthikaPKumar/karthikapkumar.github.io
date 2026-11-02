@@ -92,6 +92,42 @@ export const experience = [
   }
 ];
 export const projects: Project[] = [
+{
+  "id": "vkinder",
+  "title": "VKinder",
+  "year": "2026",
+  "genre": "CORE TEAM PROJECT",
+  "logline": "Help families and practitioners explore how place shapes childhood across Greater Melbourne. A team-built platform connects neighbourhood evidence, family-priority matching and an exploratory school-entry forecast.",
+  "stack": [
+    "Python",
+    "SQL",
+    "scikit-learn",
+    "FastAPI",
+    "PostgreSQL",
+    "React",
+    "TypeScript",
+    "Mapbox",
+    "AWS Lambda"
+  ],
+  "build": [
+    "346 reporting areas \u00b7 8 family priorities \u00b7 6.43 percentage-point forecast MAE"
+  ],
+  "features": [
+    "Neighbourhood evidence",
+    "Family Fit",
+    "Forecast evaluation"
+  ],
+  "metrics": [],
+  "live": "https://www.vkinder.me/",
+  "limits": "One test transition shares a Melbourne-wide shift. Ridge over-predicts by 3.48 percentage points; nominal 80% intervals cover only 69.9%. Historical origins reuse IRSD 2021, and 2027 interval coverage is not demonstrated. Findings are exploratory, not causal or diagnostic.",
+  "palette": {
+    "from": "#173e3a",
+    "via": "#36695b",
+    "to": "#112521",
+    "accent": "#e5c69b"
+  },
+  "motif": "flow"
+},
   {
     "id": "voltwise",
     "title": "Voltwise",
