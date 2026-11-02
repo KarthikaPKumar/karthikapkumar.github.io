@@ -4,7 +4,7 @@ A portfolio for graduate and junior data roles in Melbourne. It foregrounds IBM 
 
 ## Live pages
 
-- [Interactive portfolio](https://karthikapkumar.github.io/kathy/revamp/)
+- [Portfolio](https://karthikapkumar.github.io/kathy/)
 - [Editorial portfolio](https://karthikapkumar.github.io/kathy/)
 - [Voltwise case study](https://karthikapkumar.github.io/kathy/case-studies/voltwise.html)
 
@@ -16,7 +16,8 @@ The root page remains available to preserve existing bookmarks. Both versions us
 | --- | --- |
 | `series-source/` | Editable React, TypeScript and Vite application |
 | `revamp/` | Generated static build; regenerate rather than edit |
-| `index.html`, `editorial.css`, `editorial.js` | Editorial root page |
+| `index.html` | Canonical portfolio, copied automatically after build |
+| `editorial.html`, `editorial.css`, `editorial.js` | Archived editorial design |
 | `series-source/src/data/portfolio.ts` | Career, education and skills content |
 | `series-source/src/data/projectEvidence.json` | Project status, outcomes, architecture and limitations |
 | `case-studies/` | Shareable static project write-ups |
@@ -62,3 +63,5 @@ The chart renderer `scripts/build_voltwise_chart.py` uses ReportLab and the adja
 VKinder is featured as the core team project. Its evidence summary and case study are based on the KinderPrint README and Family Fit model card (S2.1/F3), reviewed 2 November 2026. Reported evaluation results are explicitly distinguished from an independent rerun. The private source repository is not linked as public code; the public app is https://www.vkinder.me/. No backend infrastructure or repository permissions were changed.
 
 Voltwise uses a navy/ice-blue SVG regenerated from the same 168 NASA B0005 measurements. VKinder uses a sage evidence graphic, while the route planner retains its actual map screenshot.
+
+Canonical share URL: https://karthikapkumar.github.io/kathy/. Existing `/revamp/` links continue to work. The build copies its entry page to the root; assets retain their absolute paths.

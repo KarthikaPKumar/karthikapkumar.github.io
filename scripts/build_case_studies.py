@@ -8,7 +8,7 @@ for key,e in d.items():
  esc=html.escape
  diagram='<ol class="flow">'+''.join('<li>'+esc(x)+'</li>' for x in e['steps'])+'</ol>'
  image=f'<figure><img src="{e["image"]}" alt="{esc(e["alt"])}"><figcaption>{esc(e["caption"])}</figcaption></figure>' if e['image'] else ''
- body=f'<a href="../revamp/">← Kathy’s portfolio</a><p class="status">{e["status"]}</p><h1>{e["title"]}</h1><p>{e["summary"]}</p><p class="result">{e["result"]}</p>{image}<h2>Data flow and architecture</h2><p>{e["scope"]}</p>{diagram}'
+ body=f'<a href="../">← Kathy’s portfolio</a><p class="status">{e["status"]}</p><h1>{e["title"]}</h1><p>{e["summary"]}</p><p class="result">{e["result"]}</p>{image}<h2>Data flow and architecture</h2><p>{e["scope"]}</p>{diagram}'
  for heading,field in [('Failure and limitations','failure'),('Scale and evaluation','scale'),('Hosting and cost','cost'),('Security and privacy','security')]:body+=f'<h2>{heading}</h2><p>{e[field]}</p>'
  if e["source"]:body+=f'<p><a href="{e["source"]}">Source and documentation ↗</a></p>'
  if e['live']:body+=f'<p><a href="{e["live"]}">Open demo ↗</a></p>'
