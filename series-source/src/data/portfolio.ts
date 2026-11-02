@@ -31,7 +31,7 @@ export const profile = {
     "ML Engineering",
     "Analytics Engineering"
   ],
-  "intro": "Postgraduate Data Science studies at Monash (2025–2026). Previously IBM watsonx.data (Presto). I build predictive models, reliable data pipelines and applied AI tools.",
+  "intro": "Master of Data Science graduate, Monash University (completed 2026). Previously IBM watsonx.data (Presto). I build predictive models, reliable data pipelines and applied AI tools.",
   "location": "Melbourne, Australia",
   "workRights": "Temporary Graduate Visa (Subclass 485)",
   "availability": "Available now for full-time work",
@@ -58,7 +58,7 @@ export const education = [
     "place": "Melbourne",
     "degree": "Master of Data Science",
     "period": "2025–2026",
-    "score": "Postgraduate study"
+    "score": "Completed 2026"
   },
   {
     "school": "TKM College of Engineering",
@@ -312,7 +312,7 @@ export const achievements: Achievement[] = [
     "id": "monash",
     "title": "Master of Data Science",
     "org": "Monash University",
-    "detail": "Postgraduate study combining analysis, modelling and engineering, 2025–2026.",
+    "detail": "Completed Master of Data Science at Monash University, 2025–2026, combining analysis, modelling and engineering.",
     "laurel": "Education"
   },
   {
@@ -631,7 +631,7 @@ export const seasons: Season[] = [
       {
         "code": "S03 E01",
         "title": "The Data Scientist",
-        "description": "Master of Data Science at Monash University.",
+        "description": "Completed Master of Data Science at Monash University in 2026.",
         "tags": [
           "Modelling",
           "Analysis"
@@ -878,7 +878,7 @@ export const introSlides: IntroSlide[] = [
     "kicker": "Education",
     "title": "Following the data",
     "lines": [
-      "Master of Data Science · Monash University",
+      "Master of Data Science · Monash University · Completed 2026",
       "Melbourne · 2025–2026"
     ]
   },
