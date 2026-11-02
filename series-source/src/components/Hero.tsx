@@ -105,8 +105,8 @@ export default function Hero({ onResume }: { onPlay: () => void; onResume: () =>
         <motion.h1 variants={item} className="font-display leading-[0.82] tracking-[0.02em] text-bone" style={{ fontSize: 'clamp(3.2rem, 6vw, 6.2rem)' }}>
           <span className="shimmer-text">{profile.fullName}</span>
         </motion.h1>
-        <motion.p variants={item} className="mt-1 font-sans text-sm font-bold tracking-[0.08em] text-crimson-2 sm:text-base">
-          {profile.role}
+        <motion.p variants={item} className="mt-4 font-sans text-xl font-bold tracking-[0.02em] text-crimson-2 sm:text-2xl">
+          <span>Data Scientist</span><span className="font-medium"> &amp; Engineer</span>
         </motion.p>
 
         <motion.div variants={item} className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 text-[13px] font-medium text-mist">
