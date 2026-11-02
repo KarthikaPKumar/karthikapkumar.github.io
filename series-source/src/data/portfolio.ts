@@ -42,7 +42,7 @@ export const profile = {
   },
   "resumePdf": "/kathy/assets/Kathy.pdf",
   "portrait": {
-    "src": "/kathy/assets/headshot.jpg",
+    "src": "/kathy/revamp/assets/kathy-professional.png",
     "srcSet": "",
     "alt": "Portrait of Kathy"
   },

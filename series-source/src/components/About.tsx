@@ -53,7 +53,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 1, ease: EASE }}
           >
-            I enjoy turning a difficult technical question into something useful and understandable. Teaching keeps that focus practical: a system only helps when people can use it.
+            A difficult interview knocked my confidence enough that I stopped applying. IBM got me trying again. Working with architects and directors early in my career changed how I saw myself and what I could contribute.
           </motion.p>
           <p className="mt-4 text-sm text-mist">· {profile.fullName}</p>
 
