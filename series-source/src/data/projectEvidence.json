@@ -15,7 +15,7 @@
     ],
     "summary": "A live platform for exploring neighbourhood health, development and environmental data across Greater Melbourne. Families and practitioners can explore interactive maps, compare areas, use Family Fit matching and investigate future scenarios. Built as a team project, with an exploratory school-entry forecast.",
     "result": "346 reporting areas · 8 family priorities · 6.43 percentage-point forecast MAE",
-    "image": "/kathy/assets/vkinder-live.png",
+    "image": "/assets/vkinder-live.png",
     "alt": "Actual VKinder homepage with its neighbourhood landscape, navigation and healthier childhoods introduction",
     "caption": "VKinder live website, captured 2 November 2026. Background footage credits appear in the original page.",
     "steps": [
@@ -51,7 +51,7 @@
     ],
     "summary": "Forecast battery capacity ten discharge cycles ahead from NASA laboratory measurements. Compare held-out predictions against a persistence baseline and inspect the tested analytics pipeline.",
     "result": "0.024 Ah MAE · 560 held-out windows · 44.7% lower error than persistence",
-    "image": "/kathy/assets/voltwise-capacity-dark.svg",
+    "image": "/assets/voltwise-capacity-dark.svg",
     "alt": "Recorded capacity degradation of NASA laboratory battery B0005 over 168 discharge cycles",
     "caption": "NASA laboratory cell B0005: 168 recorded discharge cycles. Capacity is measured in ampere-hours (Ah).",
     "steps": [
@@ -85,7 +85,7 @@
     ],
     "summary": "Calculate walking routes on a real central-Melbourne street graph. Pedestrian-counter snapshots add context only when freshness and reporting-coverage checks pass.",
     "result": "16,386 graph nodes · 18,772 walking segments · 13,858 addresses",
-    "image": "/kathy/assets/senseway-output.png",
+    "image": "/assets/senseway-output.png",
     "alt": "Screenshot of the live Melbourne route planner with mapped walking streets and a calculated path",
     "caption": "Actual demo, 1 November 2026. Map: © OpenStreetMap contributors (ODbL). Council data: City of Melbourne (CC BY).",
     "steps": [

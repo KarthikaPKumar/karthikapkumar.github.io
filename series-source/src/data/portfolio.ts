@@ -12,7 +12,7 @@ export type Season = {number:number;title:string;period:string;synopsis:string;e
 export type TopPick = {label:string;title:string;detail:string;palette:Palette};
 export type IntroSlide = {kicker:string;title:string;lines:string[];chips?:string[]};
 export type ProfileId = 'kathy'|'recruiter'|'developer'|'creative';
-export type SectionId = 'about'|'journey'|'originals'|'picks'|'skills'|'moments'|'story';
+export type SectionId = 'about'|'journey'|'originals'|'picks'|'skills'|'moments'|'story'|'activities';
 
 const crimson: Palette = {"from": "#2b0e1b", "via": "#6b223f", "to": "#13090f", "accent": "#e5c69b"};
 const amber: Palette = {"from": "#291a12", "via": "#83543b", "to": "#160e0b", "accent": "#e5c69b"};
@@ -35,14 +35,15 @@ export const profile = {
   "location": "Melbourne, Australia",
   "workRights": "Temporary Graduate Visa (Subclass 485)",
   "availability": "Available now for full-time work",
+  "relocation": "Open to relocate",
   "email": "karthikapillai@gmail.com",
   "links": {
     "linkedin": "https://www.linkedin.com/in/karthikapillaikumar/",
     "github": "https://github.com/KarthikaPKumar"
   },
-  "resumePdf": "/kathy/assets/Kathy.pdf",
+  "resumePdf": "/assets/Kathy.pdf",
   "portrait": {
-    "src": "/kathy/revamp/assets/kathy-professional.png",
+    "src": "/revamp/assets/kathy-professional.png",
     "srcSet": "",
     "alt": "Portrait of Kathy"
   },
@@ -956,26 +957,27 @@ export const viewerProfiles: {
     name: 'Entire Portfolio',
     blurb: 'Explore the complete portfolio',
     color: '#673247',
-    order: ['story', 'skills', 'originals', 'about', 'journey'],
+    order: ['story', 'skills', 'originals', 'about', 'journey', 'activities'],
   },
   {
     id: 'recruiter',
     name: 'Recruiter',
     blurb: 'Experience, results & skills',
     color: '#7a6142',
-    order: ['story', 'skills', 'originals'],
+    order: ['story', 'skills', 'originals', 'activities'],
   },
   {
     id: 'developer',
     name: 'Technical Peer / Connect',
     blurb: 'Explore the code or start a conversation',
     color: '#3d5261',
-    order: ['originals', 'skills', 'story', 'about', 'journey'],
+    order: ['originals', 'skills', 'story', 'about', 'journey', 'activities'],
   },
 
 ];
 
 export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: string; palette: Palette }> = {
+  activities: { nav: 'Activities', card: 'Activities', meta: 'Teaching & student engagement', palette: amber },
   about: { nav: 'About', card: 'About', meta: 'Background • Education & experience', palette: violet },
   journey: { nav: 'Journey', card: 'Journey', meta: `${seasons.length} Stages • ${seasons.reduce((n, s) => n + s.episodes.length, 0)} Milestones`, palette: amber },
   originals: { nav: 'Projects', card: 'Projects', meta: `${projects.length} Projects • 2026`, palette: crimson },

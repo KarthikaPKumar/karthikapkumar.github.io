@@ -120,14 +120,14 @@ export default function Hero({ onResume }: { onPlay: () => void; onResume: () =>
         </motion.div>
 
         <motion.p variants={item} className="mt-4 text-base font-medium leading-7 text-bone">
-          Open to graduate and junior data roles in Melbourne
+          Open to graduate and junior data roles
         </motion.p>
 
         <motion.p variants={item} className="mt-4 max-w-xl text-[15px] leading-relaxed text-bone/80 sm:text-base">
           {profile.intro}
         </motion.p>
 
-        <motion.p variants={item} className="mt-4 text-sm leading-6 text-[#ead8b8]">{profile.workRights}<br/>{profile.availability}</motion.p>
+        <motion.p variants={item} className="mt-4 text-sm leading-6 text-[#ead8b8]">{profile.workRights}<br/>{profile.availability}<br/>{profile.location} · {profile.relocation}</motion.p>
         <motion.div variants={item} className="mt-8 flex flex-wrap gap-3"><a href={profile.resumePdf} download className="btn-primary">Download résumé PDF ↓</a><button onClick={onResume} className="btn-secondary">View résumé</button><button onClick={() => scrollTo('#originals')} className="btn-secondary">View projects</button></motion.div>
       </motion.div>
 

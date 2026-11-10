@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  base: '/kathy/revamp/',
+  base: '/revamp/',
   plugins: [react(), tailwindcss()],
   build: {
     target: 'es2020',

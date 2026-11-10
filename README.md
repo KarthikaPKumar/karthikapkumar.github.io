@@ -71,3 +71,8 @@ The November 2026 personal rewrite removes the profile chooser, opening sequence
 The visual simplification was reverted at Kathy’s request. The established animated introduction, three profile choices, hero effects, section typography, skill tabs and smooth scrolling are restored. Personal project context, Notes, the clean root URL and the original supplied résumé remain.
 
 VKinder’s current card thumbnail is a direct screenshot of its live homepage, captured 2 November 2026. Model evidence remains in its project details.
+
+
+## Portfolio address and activities — November 2026
+
+The canonical portfolio address is https://karthikapkumar.github.io/. The app builds into `revamp/`, with its HTML entry copied to the root. All active assets and companion pages use account-root paths. The Activities section is available in every viewer profile and covers Junior Engineers instruction and Monash University student ambassador work. Location and availability state that Kathy is based in Melbourne and open to relocate.

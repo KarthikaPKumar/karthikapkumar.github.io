@@ -7,7 +7,7 @@ export default function About() {
     { k: 'Education', v: 'Master of Data Science', s: `${education[0].school} · ${education[0].score}` },
     { k: 'Industry experience', v: experience[0].company, s: `${experience[0].role} · ${experience[0].period}` },
     { k: 'Primary language', v: 'Python & SQL', s: 'Modelling, analytics and tooling' },
-    { k: 'Based in', v: profile.location, s: 'Australia' },
+    { k: 'Based in', v: profile.location, s: profile.relocation },
   ];
 
   return (

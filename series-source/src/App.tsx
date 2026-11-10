@@ -11,6 +11,7 @@ import { RecruiterIntro } from './components/RecruiterView';
 import ContinueWatching from './components/ContinueWatching';
 import Scene from './components/Scene';
 import About from './components/About';
+import Activities from './components/Activities';
 import Seasons from './components/Seasons';
 import Originals from './components/Originals';
 import TopPicks from './components/TopPicks';
@@ -96,6 +97,7 @@ function Series() {
 
   const sections: Record<SectionId, ReactNode> = {
     about: <About />,
+    activities: <Activities />,
     journey: <Seasons />,
     originals: <Originals onOpen={setProject} />,
     picks: <TopPicks />,
