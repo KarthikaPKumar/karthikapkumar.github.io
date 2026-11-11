@@ -1,4 +1,4 @@
-// Kathy’s verified career and portfolio content. Visual template attribution: see ATTRIBUTION.md.
+// Career and portfolio content aligned with the latest supplied résumé. Visual template attribution: see ATTRIBUTION.md.
 
 export type Palette = { from:string; via:string; to:string; accent:string };
 export type Metric = {value:string;label:string};
@@ -20,20 +20,20 @@ const ocean: Palette = {"from": "#21141c", "via": "#5c3d60", "to": "#140d11", "a
 const violet: Palette = {"from": "#271522", "via": "#49334f", "to": "#140d13", "accent": "#e5c69b"};
 const jade: Palette = {"from": "#24170f", "via": "#66503b", "to": "#160e0b", "accent": "#e5c69b"};
 export const profile = {
-  "fullName": "Kathy",
+  "fullName": "Karthika (Kathy) Kumar",
   "displayName": "Kathy",
   "firstName": "KATHY",
   "seriesTag": "DATA · MODELS · IMPACT",
   "originalLabel": "KATHY",
-  "role": "Data Scientist & Engineer",
+  "role": "Data Scientist · Data & Cloud Engineer",
   "tagline": [
     "Data Science",
     "ML Engineering",
     "Analytics Engineering"
   ],
-  "intro": "Master of Data Science graduate, Monash University (completed 2026). Previously IBM watsonx.data (Presto). At IBM, I worked on audit logging, caching improvements and Python tools for quality assurance.",
+  "intro": "Data, AI and software engineer with three years of professional experience at IBM watsonx.data, spanning vector database integration, backend APIs, pipelines processing up to 1 TB a day, query optimisation and platform security. Master of Data Science at Monash University, February 2025 – December 2026.",
   "location": "Melbourne, Australia",
-  "workRights": "Temporary Graduate Visa (Subclass 485)",
+  "workRights": "Full working rights in Australia · Temporary Graduate Visa (Subclass 485)",
   "availability": "Available now for full-time work",
   "relocation": "Open to relocate",
   "email": "karthikapillai@gmail.com",
@@ -58,81 +58,102 @@ export const education = [
     "school": "Monash University",
     "place": "Melbourne",
     "degree": "Master of Data Science",
-    "period": "2025–2026",
-    "score": "Completed 2026"
+    "period": "February 2025 – December 2026",
+    "score": ""
   },
   {
     "school": "TKM College of Engineering",
-    "place": "India",
-    "degree": "B.Tech (Honours), Computer Science Engineering",
-    "period": "",
-    "score": ""
+    "place": "Kollam, India",
+    "degree": "B.Tech (Honours), Computer Science",
+    "period": "July 2018 – May 2022",
+    "score": "CGPA 8.61/10"
   }
 ];
 export const experience = [
   {
     "company": "IBM India Software Labs",
-    "role": "Software Developer",
-    "place": "India",
-    "period": "August 2022 – January 2025",
+    "role": "Software Developer, watsonx.data",
+    "place": "Kochi, India",
+    "period": "January 2022 – January 2025",
     "points": [
-      "Worked on the Presto data platform within watsonx.data across security, performance monitoring and developer tooling.",
-      "Contributed audit logging, automated security checks and caching improvements.",
-      "Built Python tools to streamline quality assurance."
+      "Built the Milvus connector backend in Python and C++ across SaaS, Cloud Pak for Data and standalone deployments, with mutual TLS, token-refreshing gRPC authentication, pooled connections and metadata discovery.",
+      "Owned the PySpark backfill and shadow-read verification for a banking customer’s migration of about 52M vectors. Production cutover followed a seven-day soak at 99.98% recall, with recall and latency recorded in Prometheus.",
+      "Cut query time on a 1.2B-row, approximately 850 GB transactions table from 24.5 s to 15.8 s using Z-Ordering and then Liquid Clustering; files scanned fell from about 14,200 to 1,100.",
+      "Built Databricks, PySpark and SQL pipelines processing roughly 100 GB–1 TB daily, with Delta Live Tables, incremental Delta Lake MERGE loads and Unity Catalog governance.",
+      "Tuned Presto execution and caching for a 20% query improvement through open-source contributions, then shifted effort to Spark where it better suited the workloads.",
+      "As security focal, reduced release-blocking exposure from about 30% to under 15%, closing 42 findings across three releases. Implemented audit logging and replaced vulnerable log tooling with OpenTelemetry, Loki and Grafana.",
+      "Built Go REST APIs for Bring Your Own JDBC Driver and test-connection validation across eight connectors. Python QA automation cut manual effort by 50% and QA time by 25%."
     ]
   },
   {
     "company": "Junior Engineers",
-    "role": "Coding Instructor",
+    "role": "Coding Instructor and Trainer",
     "place": "Melbourne",
     "period": "August 2025 – Present",
     "points": [
-      "Teach Python, introductory data science and AI concepts.",
-      "Help onboard instructors and explain complex concepts through practical lessons."
+      "Teach three weekly classes of about ten students aged 6–12 across Victoria in Minecraft cyber security, Python, AI and STEM; deliver onsite AI classes for older students in Melbourne and Sydney.",
+      "Partner with Deadly Coders, supporting coding programmes for Aboriginal and Torres Strait Islander learners.",
+      "Set up new school classes and trained and onboarded four instructors in teaching methods, the class portal and attendance.",
+      "Contribute to content planning for upcoming classes."
+    ]
+  },
+  {
+    "company": "Monash University, Faculty of IT",
+    "role": "Student Ambassador",
+    "place": "Melbourne",
+    "period": "March 2026 – Present",
+    "points": [
+      "Represent Monash at school visits, expos, exhibitions and STEM workshops including Her Tech Path.",
+      "Allocated student volunteers to orientation placements and coordinated the volunteer team as key ambassador.",
+      "Guided students and answered their questions at the Graduate Expo.",
+      "Support workshops, event coordination and office administration."
     ]
   }
 ];
 export const projects: Project[] = [
-{
-  "id": "vkinder",
-  "title": "VKinder",
-  "year": "2026",
-  "genre": "CORE TEAM PROJECT",
-  "logline": "Help families and practitioners explore how place shapes childhood across Greater Melbourne. A team-built platform connects neighbourhood evidence, family-priority matching and an exploratory school-entry forecast.",
-  "stack": [
-    "Python",
-    "SQL",
-    "scikit-learn",
-    "FastAPI",
-    "PostgreSQL",
-    "React",
-    "TypeScript",
-    "Mapbox",
-    "AWS Lambda"
-  ],
-  "build": [
-    "346 reporting areas \u00b7 8 family priorities \u00b7 6.43 percentage-point forecast MAE"
-  ],
-  "features": [
-    "Neighbourhood evidence",
-    "Family Fit",
-    "Forecast evaluation"
-  ],
-  "metrics": [],
-  "live": "https://www.vkinder.me/",
-  "limits": "One test transition shares a Melbourne-wide shift. Ridge over-predicts by 3.48 percentage points; nominal 80% intervals cover only 69.9%. Historical origins reuse IRSD 2021, and 2027 interval coverage is not demonstrated. Findings are exploratory, not causal or diagnostic.",
-  "palette": {
-    "from": "#173e3a",
-    "via": "#36695b",
-    "to": "#112521",
-    "accent": "#e5c69b"
+  {
+    "id": "vkinder",
+    "title": "VKinder",
+    "year": "2026",
+    "genre": "CORE TEAM PROJECT",
+    "logline": "A live child-health data platform for parents and practitioners, comparing child development, services and environmental conditions across 361 Greater Melbourne areas. Monash Industry Experience capstone and finalist in the Monash DS&AI Showcase 2026.",
+    "stack": [
+      "Python",
+      "SQL",
+      "scikit-learn",
+      "FastAPI",
+      "PostgreSQL",
+      "React",
+      "TypeScript",
+      "Mapbox",
+      "AWS Lambda"
+    ],
+    "build": [
+      "361 areas · 31 public sources · 4.1-point model error vs 6.4 without a model · calibration slope 0.99"
+    ],
+    "features": [
+      "31 public sources",
+      "Expected vulnerability",
+      "E2SFCA access",
+      "Where to live",
+      "In 2031"
+    ],
+    "metrics": [],
+    "live": "https://www.vkinder.me/",
+    "limits": "Area-level analysis does not assess individual children or establish causation. Suppressed values remain suppressed and are never imputed. The 2031 tool models service pressure from official population projections.",
+    "palette": {
+      "from": "#173e3a",
+      "via": "#36695b",
+      "to": "#112521",
+      "accent": "#e5c69b"
+    },
+    "motif": "flow",
+    "github": ""
   },
-  "motif": "flow"
-},
   {
     "id": "voltwise",
     "title": "Voltwise",
-    "year": "Portfolio project",
+    "year": "2026",
     "genre": "PREDICTIVE DATA SCIENCE",
     "logline": "Predict battery capacity ten discharge cycles ahead with a random forest, using real NASA laboratory measurements and leave-one-battery-out evaluation.",
     "stack": [
@@ -189,31 +210,31 @@ export const projects: Project[] = [
   {
     "id": "nexora",
     "title": "Nexora",
-    "year": "Portfolio project",
-    "genre": "SYSTEMS & DIAGNOSTICS",
-    "logline": "Nexora (DataMedic) is an interactive demonstration of data pipeline diagnosis and recovery. It makes investigation steps visible so visitors can understand how a failure might be approached.",
+    "year": "2026",
+    "genre": "FRAUD & DATA ENGINEERING",
+    "logline": "A payments fraud platform that streams events into an Iceberg lakehouse, transforms them through 28 tested dbt models and explains LightGBM alerts in a Streamlit console.",
     "stack": [
-      "JavaScript",
-      "JSON"
+      "Python",
+      "SQL",
+      "Kafka",
+      "Apache Iceberg",
+      "dbt",
+      "Airflow",
+      "LightGBM"
     ],
     "build": [
-      "A working public demonstration presents synthetic scenarios and recorded results. The focus is explaining the diagnostic workflow and making system behaviour easier to understand."
+      "Recall 0.97 vs 0.45 for SQL rules at equal alert volume · synthetic data"
     ],
     "features": [
-      "Scenario",
-      "Pipeline symptoms",
-      "Diagnosis",
-      "Recovery explanation"
+      "Kafka + Iceberg",
+      "28 dbt models",
+      "Time-based validation",
+      "LightGBM + SHAP"
     ],
-    "metrics": [
-      {
-        "value": "Demo",
-        "label": "Interactive demonstration · Synthetic scenarios"
-      }
-    ],
-    "github": "https://github.com/KarthikaPKumar/Nexora-demo",
-    "live": "https://karthikapkumar.github.io/Nexora-demo/",
-    "limits": "This is an illustrative systems demonstration. It is not connected to production pipelines and does not autonomously repair real infrastructure.",
+    "metrics": [],
+    "github": "",
+    "live": "",
+    "limits": "Synthetic-data recall is not evidence of performance on real payments. Time-based validation and equal alert volume make the model–rules comparison meaningful within this evaluation.",
     "palette": {
       "from": "#291a12",
       "via": "#83543b",
@@ -264,18 +285,21 @@ export const projects: Project[] = [
   },
   {
     "id": "wildlife",
-    "title": "Wildlife Detection API",
-    "year": "Portfolio project",
+    "title": "CloudEcho",
+    "year": "2025",
     "genre": "ML ENGINEERING",
-    "logline": "A cloud-native inference service built around YOLOv8 and FastAPI, with an API deployment architecture using Docker, Kubernetes and infrastructure-as-code tooling.",
+    "logline": "A wildlife-detection API serving YOLOv8 through detection and annotated-image endpoints, deployed on Kubernetes on Azure with Terraform-defined infrastructure.",
     "stack": [
       "YOLOv8",
       "FastAPI",
+      "ONNX Runtime",
       "Docker",
-      "Kubernetes"
+      "Kubernetes",
+      "Terraform",
+      "Azure"
     ],
     "build": [
-      "The repository demonstrates the structure around model serving: API boundaries, containerisation and deployment configuration. Explore the implementation directly in the source."
+      "7.58 req/s at one pod → 32.32 at four → 32.68 at eight"
     ],
     "features": [
       "Image input",
@@ -283,15 +307,10 @@ export const projects: Project[] = [
       "YOLOv8 model",
       "Detection response"
     ],
-    "metrics": [
-      {
-        "value": "Code",
-        "label": "Source code available · No public demo"
-      }
-    ],
+    "metrics": [],
     "github": "https://github.com/KarthikaPKumar/Cloud-Native-Wildlife-Detection-Model",
     "live": "",
-    "limits": "There is no public running demo linked here. No production accuracy or deployment availability is claimed by this portfolio.",
+    "limits": "Throughput plateaued beyond four pods in the measured workload. These serving results do not establish wildlife-detection accuracy or current endpoint availability.",
     "palette": {
       "from": "#271522",
       "via": "#49334f",
@@ -347,10 +366,10 @@ export const achievements: Achievement[] = [
   },
   {
     "id": "monash",
-    "title": "Master of Data Science",
+    "title": "Monash DS&AI Showcase Finalist",
     "org": "Monash University",
-    "detail": "Completed Master of Data Science at Monash University, 2025–2026, combining analysis, modelling and engineering.",
-    "laurel": "Education"
+    "detail": "VKinder · Monash Industry Experience capstone · 2026",
+    "laurel": "Showcase finalist"
   },
   {
     "id": "forecast",
@@ -375,7 +394,33 @@ export const achievements: Achievement[] = [
     "laurel": "Data quality"
   }
 ];
-export const certifications: Certification[] = [];
+export const certifications: Certification[] = [
+  {
+    "issuer": "IBM",
+    "name": "Developer Jumpstart Practitioner (2024)",
+    "link": "/assets/Kathy.pdf"
+  },
+  {
+    "issuer": "IBM",
+    "name": "Cybersecurity, Data Privacy and AI (2024)",
+    "link": "/assets/Kathy.pdf"
+  },
+  {
+    "issuer": "IBM",
+    "name": "Security and Privacy by Design (2023)",
+    "link": "/assets/Kathy.pdf"
+  },
+  {
+    "issuer": "IBM",
+    "name": "Enterprise Design Thinking: Essentials for AI (2022)",
+    "link": "/assets/Kathy.pdf"
+  },
+  {
+    "issuer": "IBM",
+    "name": "Agile Explorer (2022)",
+    "link": "/assets/Kathy.pdf"
+  }
+];
 export const skillCategories: SkillCategory[] = [
   {
     "id": "languages",
@@ -428,6 +473,14 @@ export const skillCategories: SkillCategory[] = [
       {
         "name": "Model validation",
         "mono": "CV"
+      },
+      {
+        "name": "LightGBM",
+        "mono": "Lig"
+      },
+      {
+        "name": "Geospatial analysis",
+        "mono": "Geo"
       }
     ]
   },
@@ -465,11 +518,11 @@ export const skillCategories: SkillCategory[] = [
       },
       {
         "name": "Semantic metrics",
-        "mono": "\u2211"
+        "mono": "∑"
       },
       {
         "name": "Data quality",
-        "mono": "\u2713"
+        "mono": "✓"
       }
     ]
   },
@@ -493,6 +546,26 @@ export const skillCategories: SkillCategory[] = [
       {
         "name": "Git / GitHub",
         "mono": "Gt"
+      },
+      {
+        "name": "AWS",
+        "mono": "AWS"
+      },
+      {
+        "name": "Azure",
+        "mono": "Azu"
+      },
+      {
+        "name": "Terraform",
+        "mono": "Ter"
+      },
+      {
+        "name": "Prometheus",
+        "mono": "Pro"
+      },
+      {
+        "name": "OpenTelemetry",
+        "mono": "Ope"
       }
     ]
   },
@@ -504,6 +577,38 @@ export const skillCategories: SkillCategory[] = [
       {
         "name": "Presto",
         "mono": "P"
+      },
+      {
+        "name": "PySpark",
+        "mono": "PyS"
+      },
+      {
+        "name": "Databricks",
+        "mono": "Dat"
+      },
+      {
+        "name": "Delta Lake",
+        "mono": "Del"
+      },
+      {
+        "name": "Unity Catalog",
+        "mono": "Uni"
+      },
+      {
+        "name": "Kafka",
+        "mono": "Kaf"
+      },
+      {
+        "name": "Apache Iceberg",
+        "mono": "Apa"
+      },
+      {
+        "name": "Airflow",
+        "mono": "Air"
+      },
+      {
+        "name": "Milvus",
+        "mono": "Mil"
       }
     ]
   }
@@ -542,7 +647,7 @@ export const skillEvidence: Record<string, string[]> = {
     "Voltwise (portfolio project)"
   ],
   "YOLOv8": [
-    "Wildlife Detection API (project architecture)"
+    "CloudEcho (Azure deployment and load testing)"
   ],
   "Ollama": [
     "Voltwise (portfolio project)"
@@ -560,10 +665,10 @@ export const skillEvidence: Record<string, string[]> = {
     "Voltwise (portfolio project)"
   ],
   "Docker": [
-    "Wildlife Detection API (project architecture)"
+    "CloudEcho (Azure deployment and load testing)"
   ],
   "Kubernetes": [
-    "Wildlife Detection API (project architecture)"
+    "CloudEcho (Azure deployment and load testing)"
   ],
   "GitHub Actions": [
     "Voltwise (portfolio project)"
@@ -668,7 +773,7 @@ export const seasons: Season[] = [
       {
         "code": "S03 E01",
         "title": "The Data Scientist",
-        "description": "Completed Master of Data Science at Monash University in 2026.",
+        "description": "Master of Data Science at Monash University, February 2025 – December 2026.",
         "tags": [
           "Modelling",
           "Analysis"
@@ -724,8 +829,8 @@ export const seasons: Season[] = [
       },
       {
         "code": "S04 E02",
-        "title": "Pipeline diagnosis",
-        "description": "Nexora (DataMedic): an interactive pipeline diagnosis demonstration with synthetic scenarios.",
+        "title": "Payments fraud detection",
+        "description": "Nexora: payments fraud data platform with Kafka, Iceberg, 28 dbt models and LightGBM.",
         "tags": [
           "Diagnostics",
           "Data engineering"
@@ -830,7 +935,7 @@ export const topPicks: TopPick[] = [
   {
     "label": "Diagnostics",
     "title": "Nexora",
-    "detail": "DataMedic · synthetic scenarios",
+    "detail": "Kafka · Iceberg · LightGBM",
     "palette": {
       "from": "#24170f",
       "via": "#66503b",
@@ -907,7 +1012,7 @@ export const introSlides: IntroSlide[] = [
     "kicker": "Experience",
     "title": "Building at IBM",
     "lines": [
-      "Software Developer · August 2022 – January 2025",
+      "Software Developer · January 2022 – January 2025",
       "watsonx.data / Presto · security · performance · tooling"
     ]
   },
@@ -915,7 +1020,7 @@ export const introSlides: IntroSlide[] = [
     "kicker": "Education",
     "title": "Following the data",
     "lines": [
-      "Master of Data Science · Monash University · Completed 2026",
+      "Master of Data Science · Monash University · February 2025 – December 2026",
       "Melbourne · 2025–2026"
     ]
   },
@@ -924,7 +1029,7 @@ export const introSlides: IntroSlide[] = [
     "title": "Models. Systems. Questions.",
     "lines": [
       "Voltwise · battery capacity forecasting",
-      "Nexora (DataMedic) · pipeline diagnosis demo",
+      "Nexora · payments fraud data platform",
       "Sensory-aware routes · Melbourne open data"
     ]
   },

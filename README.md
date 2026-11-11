@@ -44,8 +44,8 @@ The résumé can be regenerated with `python3 scripts/build_resume.py` after ins
 
 - **Measured prototype:** Voltwise reports 0.024 Ah MAE on 560 held-out windows across four NASA laboratory cells. This does not establish fleet performance or battery safety.
 - **Open-data prototype:** Senseway uses actual OSM streets and council snapshots. Data counts are coverage metrics, not impact or latency benchmarks. Stale observations disable activity-based comparison.
-- **Synthetic demo:** Nexora replays recorded synthetic results; it has no public operational backend.
-- **Code & architecture:** Wildlife documents inference and deployment architecture without a verified public endpoint or published benchmark.
+- **Fraud platform:** Nexora evaluates LightGBM on synthetic payments, with Kafka, Iceberg and 28 dbt models. The earlier DataMedic demo is separate.
+- **Cloud deployment:** CloudEcho serves wildlife detection on Azure Kubernetes; Locust results show a throughput plateau beyond four pods.
 - **Concept:** Speech Analysis currently has a descriptive README rather than a validated implementation.
 
 Every write-up identifies its scope, failure modes, scale, cost and security limitations. No employer code or undisclosed IBM performance figures are published. New technology claims require corresponding source evidence.
