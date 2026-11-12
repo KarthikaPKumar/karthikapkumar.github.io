@@ -107,7 +107,7 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
           animate={beat >= 2 ? { opacity: 1, scale: 1, filter: 'blur(0px)', letterSpacing: '0.04em', y: beat >= 4 ? '-30vh' : 0 } : {}}
           transition={{ duration: 1.3, ease: EASE }}
         >
-          {profile.fullName}
+          Kathy
         </motion.h1>
         <motion.p
           className="font-sans text-sm font-bold text-crimson-2 [text-shadow:0_2px_20px_rgba(0,0,0,0.9)] sm:text-lg"

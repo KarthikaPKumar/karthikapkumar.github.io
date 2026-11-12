@@ -34,7 +34,7 @@ export function SeriesMark({ className = '' }: { className?: string }) {
       <svg viewBox="0 0 24 32" className="h-[1.1em] w-auto" aria-hidden>
         <path d="M6 4v24M20 4L6 17l14 11" fill="none" stroke="#7f2944" strokeWidth="4" strokeLinecap="round" />
       </svg>
-      <span className="font-sans text-[12px] max-w-[150px] sm:max-w-none text-left leading-snug font-bold tracking-[0.08em] text-mist">{profile.fullName}</span>
+      <span className="font-sans text-[12px] max-w-[150px] sm:max-w-none text-left leading-snug font-bold tracking-[0.08em] text-mist">{profile.displayName}</span>
     </span>
   );
 }

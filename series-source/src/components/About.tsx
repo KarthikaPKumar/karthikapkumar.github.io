@@ -55,7 +55,7 @@ export default function About() {
           >
             A difficult interview knocked my confidence enough that I stopped applying. IBM got me trying again. Working with architects and directors early in my career changed how I saw myself and what I could contribute.
           </motion.p>
-          <p className="mt-4 text-sm text-mist">· {profile.fullName}</p>
+          <p className="mt-4 text-sm text-mist">· Kathy</p>
 
           <motion.dl
             className="mt-10 grid gap-px overflow-hidden rounded-xl bg-white/10 sm:grid-cols-2"
